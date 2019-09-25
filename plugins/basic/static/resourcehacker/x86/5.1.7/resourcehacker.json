@@ -1,0 +1,27 @@
+{
+    "template": {
+        "name": "ResourceHacker",
+        "description": "ResourceHacker plugin"
+    },
+    "tool": {
+        "filename": "resourcehacker.exe",
+        "version": "5.1.7",
+        "type": "console"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "extract_resources": {
+            "description": "Extract resources from given file",
+            "parameters": "-open @sample@ -save @report_folder@\\files\\ -action extract -mask ICONGROUP,, -log @report_folder@\\reshacker.log",
+            "automation": null
+        }
+    }
+}

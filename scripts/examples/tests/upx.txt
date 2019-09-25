@@ -1,0 +1,50 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 upx.py ~/bph-framework/misc/bph_upx.exe 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-25 10:03:58,549|INFO|bph.core.session| Setting sample: /home/bph/bph-framework/misc/bph_upx.exe
+2019-09-25 10:03:58,550|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-25 10:03:58,551|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-25 10:03:58,551|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-25 10:03:58,552|INFO|bph.core.server.template| Socket Ready
+2019-09-25 10:03:58,552|INFO|bph.core.server.template| Starting server listener..
+2019-09-25 10:03:58,552|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-25 10:03:58,610|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 55837)
+2019-09-25 10:03:58,639|INFO|bph.tools.windows.upx| Config file path: /home/bph/bph-framework/plugins/basic/static/upx/x86/3.91w/upx.json
+2019-09-25 10:03:58,640|INFO|bph.tools.windows.upx| DECOMPRESSING
+2019-09-25 10:03:58,640|INFO|bph.tools.windows.upx| Executing Template
+2019-09-25 10:04:00,644|INFO|bph.tools.windows.upx| Agent is Connected. Delivering Template now...
+2019-09-25 10:04:00,649|INFO|bph.tools.windows.upx| {'module_name': 'bph.tools.windows.upx', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '53d4d29384354bf74c2fb2b4f8996d04', 'project_name': 'blackhat_arsenal_2019', 'rid': '63b3d464-dfe8-4d09-9476-8d936b62bada', 'tool_drive': 'H:\\', 'tool_name': 'upx', 'arch': 'x86', 'version': '3.91w', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/upx/x86', 'remote_tool_path': 'basic\\static\\upx\\x86\\3.91w', 'template': <Box: {'name': 'UPX', 'description': 'UPX plugin'}>, 'tool': <Box: {'filename': 'upx.exe', 'version': '3.91w', 'type': 'console'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'decompress': {'description': "Decompress UPX'd file and generate its log for reporting", 'parameters': '-d @sample@ -o @report_folder@\\files\\unpacked.exe > @report_folder@\\upx.log', 'automation': None}, 'action': 'decompress'}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/launcher/bph_upx.exe'}
+2019-09-25 10:04:00,649|INFO|bph.tools.windows.upx| Waiting to deliver template...
+2019-09-25 10:04:01,623|INFO|bph.core.server.template| Sending template...
+2019-09-25 10:04:01,624|INFO|bph.core.server.template| Waiting response from client...
+2019-09-25 10:04:02,952|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-25 10:04:05,656|INFO|bph.tools.windows.upx| Template has been delivered.
+2019-09-25 10:04:05,656|INFO|bph.tools.windows.upx| Next instruction will be sent in (0) seconds
+2019-09-25 10:04:05,657|INFO|bph.tools.windows.upx| Content: Ultimate Packer for eXecutables
+2019-09-25 10:04:05,657|INFO|bph.tools.windows.upx| Content: Copyright (C) 1996 - 2013
+2019-09-25 10:04:05,658|INFO|bph.tools.windows.upx| Content: UPX 3.91w       Markus Oberhumer, Laszlo Molnar & John Reiser   Sep 30th 2013
+2019-09-25 10:04:05,658|INFO|bph.tools.windows.upx| Content: 
+2019-09-25 10:04:05,659|INFO|bph.tools.windows.upx| Content: File size         Ratio      Format      Name
+2019-09-25 10:04:05,659|INFO|bph.tools.windows.upx| Content: --------------------   ------   -----------   -----------
+2019-09-25 10:04:05,660|INFO|bph.tools.windows.upx| Content: 865792 <-    386048   44.59%    win32/pe     unpacked.exe
+2019-09-25 10:04:05,660|INFO|bph.tools.windows.upx| Content: 
+2019-09-25 10:04:05,660|INFO|bph.tools.windows.upx| Content: Unpacked 1 file.
+2019-09-25 10:04:10,666|INFO|bph.tools.windows.upx| Searching for files now in: /home/bph/bph-framework/session/blackhat_arsenal_2019/53d4d29384354bf74c2fb2b4f8996d04/5842f66b-1856-4292-ad86-bc72d0b78937/upx/63b3d464-dfe8-4d09-9476-8d936b62bada
+2019-09-25 10:04:10,667|INFO|bph.tools.windows.upx| File: upx.log
+2019-09-25 10:04:10,668|INFO|bph.tools.windows.upx| File: unpacked.exe
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ 
+

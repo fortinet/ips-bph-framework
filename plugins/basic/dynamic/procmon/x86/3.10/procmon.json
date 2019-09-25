@@ -1,0 +1,38 @@
+{
+    "template": {
+        "name": "ProcMon",
+        "description": "ProcMon plugin"
+    },
+    "tool": {
+        "filename": "procmon.exe",
+        "version": "3.10",
+        "type": "console"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "action": "",
+        "capture": {
+            "description": "",
+            "parameters": "/Quiet /AcceptEula /BackingFile @report_folder@\\files\\procmon.pml /LoadConfig @tool_path@\\noisereduction.pmc",
+            "automation": null
+        },
+        "export": {
+            "description": "",
+            "parameters": "/Quiet /AcceptEula /OpenLog @report_folder@\\files\\procmon.pml /SaveAs2 @report_folder@\\files\\procmon.xml /SaveApplyFilter",
+            "automation": null
+        },
+        "terminate": {
+            "description": "",
+            "parameters": "/Terminate",
+            "automation": null
+        }
+    }
+}

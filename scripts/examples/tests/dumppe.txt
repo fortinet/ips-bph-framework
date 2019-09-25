@@ -1,0 +1,232 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 dumppe.py ~/bph-framework/misc/bph_upx.exe 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-24 18:11:12,024|INFO|bph.core.session| Setting sample: /home/bph/bph-framework/misc/bph_upx.exe
+2019-09-24 18:11:12,025|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-24 18:11:12,025|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-24 18:11:12,026|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-24 18:11:12,026|INFO|bph.core.server.template| Socket Ready
+2019-09-24 18:11:12,026|INFO|bph.core.server.template| Starting server listener..
+2019-09-24 18:11:12,026|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-24 18:11:12,106|INFO|bph.tools.windows.dumppe| Config file path: /home/bph/bph-framework/plugins/basic/static/dumppe/x86/2.32/dumppe.json
+2019-09-24 18:11:12,107|INFO|bph.tools.windows.dumppe| DEFAULT
+2019-09-24 18:11:12,107|INFO|bph.tools.windows.dumppe| Executing Template
+2019-09-24 18:11:12,508|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 54643)
+2019-09-24 18:11:14,109|INFO|bph.tools.windows.dumppe| Agent is Connected. Delivering Template now...
+2019-09-24 18:11:14,114|INFO|bph.tools.windows.dumppe| {'module_name': 'bph.tools.windows.dumppe', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '53d4d29384354bf74c2fb2b4f8996d04', 'project_name': 'blackhat_arsenal_2019', 'rid': '1b069fce-719b-479c-8f00-4bf1fbf6fc59', 'tool_drive': 'H:\\', 'tool_name': 'dumppe', 'arch': 'x86', 'version': '2.32', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/dumppe/x86', 'remote_tool_path': 'basic\\static\\dumppe\\x86\\2.32', 'template': <Box: {'name': 'DumpPE', 'description': 'DumpPE plugin'}>, 'tool': <Box: {'filename': 'dumppe.exe', 'version': '2.32', 'type': 'console'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'action': 'default', 'default': {'description': 'Dumps target executable with default options', 'parameters': '-quiet @sample@  > @report_folder@\\dumppe.log', 'automation': None}}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/launcher/bph_upx.exe'}
+2019-09-24 18:11:14,116|INFO|bph.tools.windows.dumppe| Waiting to deliver template...
+2019-09-24 18:11:14,519|INFO|bph.core.server.template| Sending template...
+2019-09-24 18:11:14,520|INFO|bph.core.server.template| Waiting response from client...
+2019-09-24 18:11:15,783|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-24 18:11:19,122|INFO|bph.tools.windows.dumppe| Template has been delivered.
+2019-09-24 18:11:19,122|INFO|bph.tools.windows.dumppe| Next instruction will be sent in (0) seconds
+2019-09-24 18:11:19,125|INFO|bph.tools.windows.dumppe| Content: C:\Users\bph\AppData\Roaming\bph_upx.exe   (hex)           (dec)
+2019-09-24 18:11:19,126|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,126|INFO|bph.tools.windows.dumppe| Content: .EXE size (bytes)                    490            1168
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: Minimum load size (bytes)            450            1104
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: Overlay number                         0               0
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: Initial CS:IP                  0000:0000
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: Initial SS:SP                  0000:00B8             184
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: Minimum allocation (para)              0               0
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: Maximum allocation (para)           FFFF           65535
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: Header size (para)                     4               4
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: Relocation table offset               40              64
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: Relocation entries                     0               0
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: Portable Executable starts at                110
+2019-09-24 18:11:19,127|INFO|bph.tools.windows.dumppe| Content: Signature                               00004550 (PE)
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Machine                                     014C (Intel 386)
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Sections                                    0003
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Time Date Stamp                         5D647AB5 Mon Aug 26 17:35:01 2019
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Symbol Table                            00000000
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Number of Symbols                       00000000
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Optional header size                        00E0
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Characteristics                             0122
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Executable Image
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Large Address aware (>2GB)
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: 32 bit word machine
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Magic                                       010B
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Linker Version                             12.00
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Size of Code                            00058000
+2019-09-24 18:11:19,128|INFO|bph.tools.windows.dumppe| Content: Size of Initialized Data                00007000
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: Size of Uninitialized Data              00087000
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: Address of Entry Point                  000DF060
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: Base of Code                            00088000
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: Base of Data                            000E0000
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: Image Base                              00400000
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: Section Alignment                       00001000
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: File Alignment                          00000200
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: Operating System Version                    5.01
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: Image Version                               0.00
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: Subsystem Version                           5.01
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: reserved                                00000000
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: Image Size                              000E7000
+2019-09-24 18:11:19,129|INFO|bph.tools.windows.dumppe| Content: Header Size                             00001000
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: Checksum                                00000000
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: Subsystem                                   0002 (Windows)
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: DLL Characteristics                         8040
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: Size Of Stack Reserve                   00400000
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: Size Of Stack Commit                    00001000
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: Size Of Heap Reserve                    00400000
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: Size Of Heap Commit                     00001000
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: Loader Flags                            00000000
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: Number of Directories                   00000010
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: Directory Name                          VirtAddr  VirtSize
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: --------------------------------------  --------  --------
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: Export                                  00000000  00000000
+2019-09-24 18:11:19,130|INFO|bph.tools.windows.dumppe| Content: Import                                  000E6698  00000424
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Resource                                000E0000  00006698
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Exception                               00000000  00000000
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Security                                00000000  00000000
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Base Relocation                         000E6ABC  0000000C
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Debug                                   00000000  00000000
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Decription/Architecture                 00000000  00000000
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Machine Value (MIPS GP)                 00000000  00000000
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Thread Storage                          00000000  00000000
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Load Configuration                      000DF244  00000048
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Bound Import                            00000000  00000000
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Import Address Table                    00000000  00000000
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: Delay Import                            00000000  00000000
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: COM Runtime Descriptor                  00000000  00000000
+2019-09-24 18:11:19,131|INFO|bph.tools.windows.dumppe| Content: (reserved)                              00000000  00000000
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: Section Table
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: -------------
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: 01  UPX0    	Virtual Address         00001000
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: Virtual Size            00087000
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: Raw Data Offset         00000400
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: Raw Data Size           00000000
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: Relocation Offset       00000000
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: Relocation Count        0000
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: Line Number Offset      00000000
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: Line Number Count       0000
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: Characteristics         E0000080
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: Uninitialized Data
+2019-09-24 18:11:19,132|INFO|bph.tools.windows.dumppe| Content: Executable
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Readable
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Writeable
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: 02  UPX1    	Virtual Address         00088000
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Virtual Size            00058000
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Raw Data Offset         00000400
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Raw Data Size           00057400
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Relocation Offset       00000000
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Relocation Count        0000
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Line Number Offset      00000000
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Line Number Count       0000
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Characteristics         E0000040
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Initialized Data
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Executable
+2019-09-24 18:11:19,133|INFO|bph.tools.windows.dumppe| Content: Readable
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Writeable
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: 03  .rsrc   	Virtual Address         000E0000
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Virtual Size            00007000
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Raw Data Offset         00057800
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Raw Data Size           00006C00
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Relocation Offset       00000000
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Relocation Count        0000
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Line Number Offset      00000000
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Line Number Count       0000
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Characteristics         C0000040
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Initialized Data
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Readable
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: Writeable
+2019-09-24 18:11:19,134|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from KERNEL32.DLL - Not Bound
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: 000E6814    0 LoadLibraryA
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: 000E6818    0 GetProcAddress
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: 000E681C    0 VirtualProtect
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: 000E6820    0 VirtualAlloc
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: 000E6824    0 VirtualFree
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: 000E6828    0 ExitProcess
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from ADVAPI32.dll - Not Bound
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: 000E6830    0 GetAce
+2019-09-24 18:11:19,135|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from COMCTL32.dll - Not Bound
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: 000E6838    0 ImageList_Remove
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from COMDLG32.dll - Not Bound
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: 000E6840    0 GetOpenFileNameW
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from GDI32.dll - Not Bound
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: 000E6848    0 LineTo
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from IPHLPAPI.DLL - Not Bound
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: 000E6850    0 IcmpSendEcho
+2019-09-24 18:11:19,136|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from MPR.dll - Not Bound
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: 000E6858    0 WNetUseConnectionW
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from ole32.dll - Not Bound
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: 000E6860    0 CoGetObject
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from OLEAUT32.dll - Not Bound
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: 000E6868  Ord OLEAUT32.8
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from PSAPI.DLL - Not Bound
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: 000E6870    0 GetProcessMemoryInfo
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,137|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from SHELL32.dll - Not Bound
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: 000E6878    0 DragFinish
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from USER32.dll - Not Bound
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: 000E6880    0 GetDC
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from USERENV.dll - Not Bound
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: 000E6888    0 LoadUserProfileW
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from UxTheme.dll - Not Bound
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: 000E6890    0 IsThemeActive
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from VERSION.dll - Not Bound
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,138|INFO|bph.tools.windows.dumppe| Content: 000E6898    0 VerQueryValueW
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from WININET.dll - Not Bound
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: 000E68A0    0 FtpOpenFileW
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from WINMM.dll - Not Bound
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: 000E68A8    0 timeGetTime
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: Imp Addr Hint Import Name from WSOCK32.dll - Not Bound
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: -------- ---- ---------------------------------------------------------------
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: 000E68B0  Ord WSOCK32.4
+2019-09-24 18:11:19,139|INFO|bph.tools.windows.dumppe| Content: 
+2019-09-24 18:11:24,142|INFO|bph.tools.windows.dumppe| Searching for files now in: /home/bph/bph-framework/session/blackhat_arsenal_2019/53d4d29384354bf74c2fb2b4f8996d04/5842f66b-1856-4292-ad86-bc72d0b78937/dumppe/1b069fce-719b-479c-8f00-4bf1fbf6fc59
+2019-09-24 18:11:24,142|INFO|bph.tools.windows.dumppe| File: dumppe.log
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ 
+

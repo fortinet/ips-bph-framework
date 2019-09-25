@@ -1,0 +1,63 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 networktrafficview_python.py 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-25 10:06:30,864|INFO|bph.core.session| Starting session without setting up a sample file...
+2019-09-25 10:06:30,864|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-25 10:06:30,864|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-25 10:06:30,865|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-25 10:06:30,865|INFO|bph.core.server.template| Socket Ready
+2019-09-25 10:06:30,865|INFO|bph.core.server.template| Starting server listener..
+2019-09-25 10:06:30,865|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-25 10:06:30,874|INFO|bph.tools.windows.networktrafficview| Config file path: /home/bph/bph-framework/plugins/network/networktrafficview/x86/2.30/networktrafficview.json
+2019-09-25 10:06:30,875|INFO|bph.tools.windows.networktrafficview| START
+2019-09-25 10:06:30,875|INFO|bph.tools.windows.networktrafficview| Executing Template
+2019-09-25 10:06:30,950|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 55991)
+2019-09-25 10:06:32,877|INFO|bph.tools.windows.networktrafficview| Agent is Connected. Delivering Template now...
+2019-09-25 10:06:32,880|INFO|bph.tools.windows.networktrafficview| {'module_name': 'bph.tools.windows.networktrafficview', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '', 'project_name': 'blackhat_arsenal_2019', 'rid': 'e42da819-f803-4435-82c7-1c18e13b6876', 'tool_drive': 'H:\\', 'tool_name': 'networktrafficview', 'arch': 'x86', 'version': '2.30', 'tool_directory': '/home/bph/bph-framework/plugins/network/networktrafficview/x86', 'remote_tool_path': 'network\\networktrafficview\\x86\\2.30', 'template': <Box: {'name': 'Network Traffic View', 'description': 'Network Traffic View plugin'}>, 'tool': <Box: {'filename': 'networktrafficview.exe', 'version': '2.30', 'type': 'gui'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': True, 'download_sample': False, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': False}}>, 'actions': <Box: {'start': {'description': 'Start', 'parameters': '/scomma @report_folder@\\files\\networktrafficview.csv /LoadConfig @tool_path@\\NetworkTrafficView.cfg /CaptureTime 0', 'automation': None}, 'stop': {'description': 'Stop', 'parameters': '/StopCommandLineCapture', 'automation': None}, 'collect': {'description': 'Collect', 'parameters': None, 'automation': None}, 'action': 'start'}>}
+2019-09-25 10:06:32,881|INFO|bph.tools.windows.networktrafficview| Waiting to deliver template...
+2019-09-25 10:06:32,960|INFO|bph.core.server.template| Sending template...
+2019-09-25 10:06:32,961|INFO|bph.core.server.template| Waiting response from client...
+2019-09-25 10:06:33,207|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-25 10:06:37,892|INFO|bph.tools.windows.networktrafficview| Template has been delivered.
+2019-09-25 10:06:37,892|INFO|bph.tools.windows.networktrafficview| Next instruction will be sent in (0) seconds
+2019-09-25 10:06:37,914|INFO|bph.tools.windows.nircmd| Config file path: /home/bph/bph-framework/plugins/basic/dynamic/nircmd/x86/2.85/nircmd.json
+2019-09-25 10:06:37,914|INFO|bph.tools.windows.nircmd| STARTING PROCESS
+2019-09-25 10:06:37,914|INFO|bph.tools.windows.nircmd| Executing Template
+2019-09-25 10:06:39,916|INFO|bph.tools.windows.nircmd| Agent is Connected. Delivering Template now...
+2019-09-25 10:06:39,917|INFO|bph.tools.windows.nircmd| {'module_name': 'bph.tools.windows.nircmd', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '', 'project_name': 'blackhat_arsenal_2019', 'rid': 'e59dc196-5892-4e83-be5b-238bf97ccc4f', 'tool_drive': 'H:\\', 'tool_name': 'nircmd', 'arch': 'x86', 'version': '2.85', 'tool_directory': '/home/bph/bph-framework/plugins/basic/dynamic/nircmd/x86', 'remote_tool_path': 'basic\\dynamic\\nircmd\\x86\\2.85', 'template': <Box: {'name': 'NirCmd', 'description': 'NirCmd plugin'}>, 'tool': <Box: {'filename': 'nircmdc.exe', 'version': '2.85', 'type': 'console'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': False, 'custom_user_vars': {'program': 'python -c "import urllib2 ; print(urllib2.urlopen(\\"https://icanhazip.com\\").read().strip())" > @report_folder@\\\\nircmd.log'}, 'delay': 5}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'kill_process': {'description': 'Kills a target process', 'parameters': 'killprocess @program@', 'automation': None}, 'start_process': {'description': 'Starts a target process', 'parameters': 'exec show @program@', 'automation': None}, 'action': 'start_process'}>}
+2019-09-25 10:06:39,918|INFO|bph.tools.windows.nircmd| Waiting to deliver template...
+2019-09-25 10:06:40,249|INFO|bph.core.server.template| Sending template...
+2019-09-25 10:06:40,249|INFO|bph.core.server.template| Waiting response from client...
+2019-09-25 10:06:44,953|INFO|bph.tools.windows.nircmd| Waiting to deliver template...
+2019-09-25 10:06:45,475|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-25 10:06:49,958|INFO|bph.tools.windows.nircmd| Template has been delivered.
+2019-09-25 10:06:49,958|INFO|bph.tools.windows.nircmd| Next instruction will be sent in (5) seconds
+2019-09-25 10:06:54,962|INFO|bph.tools.windows.networktrafficview| STOP
+2019-09-25 10:06:54,963|INFO|bph.tools.windows.networktrafficview| Executing Template
+2019-09-25 10:06:56,965|INFO|bph.tools.windows.networktrafficview| Agent is Connected. Delivering Template now...
+2019-09-25 10:06:56,966|INFO|bph.tools.windows.networktrafficview| {'module_name': 'bph.tools.windows.networktrafficview', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '', 'project_name': 'blackhat_arsenal_2019', 'rid': 'e42da819-f803-4435-82c7-1c18e13b6876', 'tool_drive': 'H:\\', 'tool_name': 'networktrafficview', 'arch': 'x86', 'version': '2.30', 'tool_directory': '/home/bph/bph-framework/plugins/network/networktrafficview/x86', 'remote_tool_path': 'network\\networktrafficview\\x86\\2.30', 'template': <Box: {'name': 'Network Traffic View', 'description': 'Network Traffic View plugin'}>, 'tool': <Box: {'filename': 'networktrafficview.exe', 'version': '2.30', 'type': 'gui'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': False, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'start': {'description': 'Start', 'parameters': '/scomma @report_folder@\\files\\networktrafficview.csv /LoadConfig @tool_path@\\NetworkTrafficView.cfg /CaptureTime 0', 'automation': None}, 'stop': {'description': 'Stop', 'parameters': '/StopCommandLineCapture', 'automation': None}, 'collect': {'description': 'Collect', 'parameters': None, 'automation': None}, 'action': 'stop'}>}
+2019-09-25 10:06:56,968|INFO|bph.tools.windows.networktrafficview| Waiting to deliver template...
+2019-09-25 10:06:57,539|INFO|bph.core.server.template| Sending template...
+2019-09-25 10:06:57,540|INFO|bph.core.server.template| Waiting response from client...
+2019-09-25 10:06:58,804|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-25 10:07:01,977|INFO|bph.tools.windows.networktrafficview| Template has been delivered.
+2019-09-25 10:07:01,978|INFO|bph.tools.windows.networktrafficview| Next instruction will be sent in (0) seconds
+2019-09-25 10:07:06,983|INFO|bph.tools.windows.networktrafficview| Searching for files now in: /home/bph/bph-framework/session/blackhat_arsenal_2019/5842f66b-1856-4292-ad86-bc72d0b78937/networktrafficview/e42da819-f803-4435-82c7-1c18e13b6876
+2019-09-25 10:07:06,984|INFO|bph.tools.windows.networktrafficview| File: networktrafficview.csv
+['icanhazip.com']
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ 
+

@@ -1,0 +1,27 @@
+{
+    "template": {
+        "name": "XOR Search",
+        "description": "XORSearch plugin"
+    },
+    "tool": {
+        "filename": "xorsearch.exe",
+        "version": "1.11.2",
+        "type": "console"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "search_www": {
+            "description": "Search for XOR'd data",
+            "parameters": "-i @sample@ www. > @report_folder@\\xorsearch.log",
+            "automation": null
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "template": {
+        "name": "ExeInfoPe",
+        "description": "ExeInfoPe plugin"
+    },
+    "tool": {
+        "filename": "exeinfope.exe",
+        "version": "0.0.3.5",
+        "type": "gui"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "action": "",
+        "default": {
+            "description": "Starts BinText and pass sample as argument by automation",
+            "parameters": "@sample@",
+            "automation": "JHJlcG9ydF9mb2xkZXIgPSAiQHJlcG9ydF9mb2xkZXJAIg0KJGxvZ2ZpbGUgPSAkcmVwb3J0X2ZvbGRlciAmICJcZXhlaW5mb3BlLmxvZyINCkZpbGVEZWxldGUoJGxvZ2ZpbGUpDQokZXhlaW5mb3BlID0gV2luQWN0aXZhdGUoIkV4ZWluZm8gUEUiKQ0KJG1zZyA9IENvbnRyb2xHZXRUZXh0KCRleGVpbmZvcGUsICIiLCAiW0NMQVNTOlRFZGl0OyBJTlNUQU5DRTo2XSIpDQokZiA9IEZpbGVPcGVuKCRsb2dmaWxlLCAyKQ0KRmlsZVdyaXRlKCRmLCAkbXNnKQ0KV2luQ2xvc2UoJGV4ZWluZm9wZSk="
+        }
+    }
+}

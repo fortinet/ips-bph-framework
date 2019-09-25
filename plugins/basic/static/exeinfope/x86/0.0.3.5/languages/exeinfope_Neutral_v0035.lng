@@ -1,0 +1,366 @@
+
+; This is user language file for Exeinfo Pe 0.0.3.5 by A.S.L
+
+
+
+; If Exeinfo find this file config lng  will be ignored
+
+; ( ; ) = comment - Exeinfo ignore it , empty line ignored , " " - space not allowed
+; ( _name ) = internal command for exeinfo
+; ( . ) - TForm caption
+; info : You can add any Resource Item Name ( only object with ".caption" allowed )
+; ( & )  - Hot keys info example : &About = "A" Hot key , e&xit = "X" Hot key
+
+; _Charset supported : 
+; ANSI , Arabic , Baltic , chineseBig5 , Default , EastEurope , GB2312 , Greek , Hangeul , MAC , Russian , Turkish
+
+
+_Version=1.23
+_Charset = GB2312  - This is China Simplified. - *You can change to supported charset !
+_Comment = User Language file
+
+
+; Main Form1 ----------------------------------------------------------------------
+
+_Main
+
+EP=*EP user
+Foffset=*File offs
+Linker_i=*Linker
+FSize=*size user
+EP_sec=*EP Sec 
+FirstB=*F bytes
+SubSys=*Subsys 
+Overlay=*overlay
+Diag_=* Diagnose...
+Lame_info=*Lame infos !
+
+; Hex 2 Dec calculator
+kalk=*Enter Hex value to convert ...
+kalk_decHex=*Enter Decimal to Hexadecimal convert ...
+
+; Main form Buttons
+
+But_File=&FiLe :
+Plugi=*plugin
+O_prog=&AbOuT !
+opcje_but=*&OPtion
+wyjscie=*E&xit !
+RipButton=RiP
+
+; Ripper All Menu items
+
+_RipMenu
+
+exe=Rip executable Pe
+ScanonlyEXEpe=*scan only - don't Rip
+MSI_RIP=*( MSI generic ( msi / doc / xls / pps / adp / wps )
+
+; GFX pictures    -   RIP Submenu :
+
+GFXRip_Menu=*Ripper Graph Sub Menu :
+PNG_rip=*p n g
+JPG_rip=*jpg JFIF
+BMP_rip=*Bitmap BMP
+GIF_rip=*GIF
+AllGFX1=*All pictures Rip
+
+; BIN archives    -   RIP Submenu :
+
+Arch_Rip_menu=*Ripper Archives Sub Menu : rar zip ...
+Rip_zip=*zIp
+Rip_Rararch=* RAR Archive
+Rip_7ziparch=* 7zip ripper
+cab=* MS CAB Archives
+Rip_Bzip2arch=*BZip2 Arch Rip
+Rip_gzipArch=*GZip Arch Rip
+Allinone1=* All Archives Rip
+
+
+
+www_rip=*www / http
+Rip_SWFflash=*flash rip
+Rip_hiddenicon=*icon rip
+Rip_xml=*xml rip
+uniRip=*universal rip
+Im_hungry_forRip=*I'm hungry for Ripping ( All in One )
+
+;Tools Menu items
+
+ExternalRun=Run Ext programs
+OverlayMenu=exe overlay operations SubMenu
+; submenu
+SaveOverlayifexist=*Save Overlay as *.ovl ( if exist )
+Trunk_overlay=*Trunk overlay ( generate new file )
+Addemptyoverlaydata=*Add empty overlay data
+Add_overlay_from_file=*Add overlay from file
+OverlayuncrypterXOR=*Overlay uncrypter XOR ( if exe in ovl )
+
+OEPCorrectormenu=fix OEP menu
+; submenu OEP
+EPcorrector1=*EP corrector (Delphi / C++ 6 )  multi files generator 
+EPcorrector_Del_runtime=*EP corrector for Delphi v.5.0 -  Runtime method
+EPcorr_DevC=*EP corrector for &Dev C++ / MINGW 32 / GCC 32 Compiler
+;
+XoR_permutator=generate xor-ed ... data
+sec_stripper=save sections to files
+rejestry=Reg call scanner
+SearchCompilerRuntime=Search Compiler Runtime
+
+eXtraTools=eXtra Tools 
+; submenu Tools
+ATunprotector=*AT4RE v1.0 protector - unprotector Tool
+sign_count=*Signatures counter for ( userdb.txt  )
+VBfakeUPX=*Add Visual Basic fake sign for UPX packer
+ep_1000=*set EP to 1000 like PEcompact ,Asprotect and scan again
+Flashscrambler=*anti Flashback scrambler - inc EP  for UPX - and scan again
+SavemodifiedBuffertofile=*Save modified Buffer to file
+
+; File Menu Items
+
+Rename_file=* Rename *file
+CopyAs=* Copy As *.bak
+Executecreateprocess=* Execute create process
+ExecuteRun=*Execute Run !!!
+Deletefile1=*Delete file  Alt+Del
+FileProp=*&Windows File Properties
+Killexe=* Kill exe process from MEM
+multiskaner=* F2 key = run multi scaner
+Other_detect=*R.Mouse Button - Others detectors / unpackers  MENU
+Viewlogfile1=***Global log file menu :
+;submenu Log
+Viewgloballogfile=View global log file
+Deletelogfile=*Delete log file
+;
+snapshot=*Create and Save &Screenshot to JPG / PNG  file
+calculator1=* Run &Calculator
+hex2dec=*Convert &Hex Value to Decimal and Dec 2 Hex
+Detect_installedNETver=*Detect installed .&NET Framework versions
+
+; Disassemble Menu
+
+disassemblefileview=*Disassemble file view :
+dASMRVA=*d-Asm RVA
+dAsmVA=*d-Asm VA ( 40xxxx )
+dAsm_fileoffset=*d-Asm File Offset
+Searchmenu=*Search menu :
+binaryHEX=*Binary hex bytes
+string816bit=*String 8/16 bit ( ascii / unicode )
+ViewHEXfileOffset=*View HEX / Ascii  file Offset
+
+; --------------------------------------------------------------------------------------------
+
+_Config
+
+.=*C o n f i g - W i n d o w
+CB_Fscan=*Fast skan
+CBox_errors=*ignore Error
+Label_skin=*SelecT skin !!!!
+CheckBoxTOP=*Always on Top
+shell_integration=*shell integration !
+closeEI_whenExtRun=*Close ExeInfo when run ext.
+Label2logFile=*Log file save:
+Gui_Big=*Big Form
+Label3lang=*Lang selector :
+; INFO : I copy "okey" value to About Form "OK" Button
+okej=*OK
+; *** if exeinfo found exeinfope.lng file - show info on config window
+Ext_lang_file=* user .lng file loaded
+
+; --------------------------------------------------------------
+
+_Multiscan
+
+multifile_scan=*Start scan
+wait_czekaj=*- >  Please Wait ...  < -
+bn_close=*c l o s e
+Scan_dir=*scanned dir...
+change_charset=*Char set
+
+; MULTISCAN MENU Right Mouse Button
+
+copy_current_l2clip=*copy current line to Clip
+copyresulttoClip=copy result to Clip
+savetolocalLOGfile=*save result to local LOG file
+F_unknownExe=*filter - show only - **Unknown file
+F_hide64bitPEfiles=*filter - hide 64 bit PE files
+Hideselectedline=*Hide selected line
+Hideidenticaldiagnoselines=*Hide identical diagnose lines
+setFonttoBold=*Switch Font -  [ Bold / Normal ]
+Adv_scan_dll=*  >>>   Run advanced_scan.dll  <<<
+load_to_exein=*Load in ExeInfo PE
+EXITtoWindows=*      EXIT - to Windows
+
+; ------------------------------------------------------------------
+
+_Sections
+
+.=*SEctions :
+
+GroupBox1=*Section status :
+Check_exec=*eXeCuTaBle
+Check_R=*Readable
+Check_W=*wRiTaBle !
+
+SekcjaSize=* Section size :
+
+;Sections Buttons
+
+copyTClip=*copyToClip
+SecsStat=*SecsStat
+CloseTXT2=*cLoSe!
+
+
+;Sections Menu
+viewH=*view ( &Hex / Ascii ) 
+viewASM=*view ( ASM code )
+shortjmpcount=*short JMP counter ( EB 01 - EB 05 )
+countNOPinstr=*count NOPs instruction ( 90 90. . . )
+stat00section=*stat 00h value section test ( % )
+view_search_menu=* >>   view / search  MENU 
+Savesectiontodisk=*Save section to disk
+
+
+; ------------------------------------------------------------------
+
+_Viewer
+
+.=*Viewer Window !!!
+
+; buttons
+cClip=*copyClip
+CloseTXT= *CloSe
+
+
+; ------------------------------------------------------------------
+
+; Exe Header Info GUI
+_HeadInfo
+
+.=* Header Info :
+FromHeaderVo=*From header :    Very often :
+klip=*copy 2 clip
+CloseW=*Close
+
+;
+;
+;
+;
+;
+
+
+; -------------------------------------------------------------------
+
+_Statistic
+
+back_to_exei=*Close !
+sections_but=*Sections
+
+
+; ******************* added at version 0.0.3.4 *************************
+
+
+; Exe - DLL characteristic GUI
+_FileCharFlag
+
+.=*File Characteristics
+character=*Characteristics : 
+GpBox_DLL=***DLL Flag
+GBox1=*Hi
+GBox2=*Lo
+
+_NET_GUI
+
+.=*.NET Directory
+NET_PE_Header_COM=*PE Header - COM Descriptor Area
+NET_Meta_Data_Head=*Meta Data Header
+NET_Streams=*Meta Data Streams
+RipNET=*Rip .Net Resources
+; ----  RMButton menu   -----
+ItemHexView=*Item Hex View
+CopyLineClip=*Copy ( Add ) line to clip
+CopyAlllinestoclip=*Copy all lines to clip
+
+
+_Delphi_Form
+
+.=*DFM view as text
+
+FormView=*Form viewer
+saveTXT=*save as text
+
+
+_Main
+;  BIN archives    -   RIP Submenu :
+
+Rip_Lzma=*Ripper Lzma Archive ( 5D 00 ...)
+Rip_Zlib=*Ripper Zlib Archives ( 78 xx ...)
+
+;Tools Menu items
+
+Zlib_unpacker=*( DATA ) - Zlib unpacker v.1.2.x - www.base2ti.com
+DForm_View=*DFM - Delphi Form Scanner ( view as Text )
+
+
+;.NET Tools / Detectors - RMButton menu
+
+NETToolMenu=*.NET Tools / Detectors
+RedGateObfChk=*RedGate.ObfuscationChecker - Trial Free only *
+
+
+; ******************* Added at version 0.0.3.5 *************************
+
+; File Menu Items - Main Form
+
+Copy_part_of_file=*&Copy - part of a Big  file - at : 0000  to : ????
+
+
+; Sections GUI
+
+_Sections
+
+cave_finder=*Cave
+
+
+; Disassemble GUI
+
+
+_Dasm_GUI
+
+.=*Disassemble Window caption*
+
+Code_colorizer=*Code_colorizer
+
+UpCase_code=*UpCase_code
+
+;RichMenu
+
+dASMRVA=*D-Asm RVA
+dAsmVA=*D-Asm VA ( 40xxxx )
+dAsm_fileoffset=*D-Asm File Offset
+
+
+Searchtext=*Search text
+
+CopySelectedToClip=*Copy to Clipboard ( selected text )
+CopyAllToClip=*Copy to Clipboard - All
+CleanClipboard=*Clean Clipboard
+
+disassemblefileview=*disassemble file view
+View_as_Hex=View as Hexadecimal bytes
+MarklinetoRedBOX=*Enable / Disable text + mark line to Red BOX
+
+
+; AdrConvert GUI
+_AdrConvert
+
+.=*Address Converter
+
+Label_VA=VA :
+Label_RVA=RVA :
+Label_offset=*file offset :
+
+
+; =================================================
+; End of .lng file 
+; =================================================

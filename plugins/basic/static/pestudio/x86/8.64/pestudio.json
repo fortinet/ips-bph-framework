@@ -1,0 +1,27 @@
+{
+    "template": {
+        "name": "PESTudio",
+        "description": "PEStudio plugin"
+    },
+    "tool": {
+        "filename": "pestudiox.exe",
+        "version": "8.64",
+        "type": "console"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "default": {
+            "description": "Execute PEStudio Analysis on a target sample file",
+            "parameters": "-file:@sample@ -xml:@appdata@report.xml && move @appdata@report.xml @report_folder@\\files\\",
+            "automation": null
+        }
+    }
+}

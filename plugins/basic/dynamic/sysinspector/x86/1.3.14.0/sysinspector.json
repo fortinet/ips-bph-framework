@@ -1,0 +1,38 @@
+{
+    "template": {
+        "name": "SysInspector",
+        "description": "SysInspector Plugin"
+    },
+    "tool": {
+        "filename": "sysinspector_nt32_enu.exe",
+        "version": "1.3.14.0",
+        "type": "gui"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": false
+        }
+    },
+    "actions": {
+        "action": "",
+        "first_shot": {
+            "description": "Takes the first snapshot",
+            "parameters": "/gen=@report_folder@\\files\\old.xml /privacy /silent",
+            "automation": null
+        },
+        "second_shot": {
+            "description": "Takes the second snapshot",
+            "parameters": "/gen=@report_folder@\\files\\new.xml /privacy /silent",
+            "automation": null
+        },
+        "compare": {
+            "description": "Performs the comparison between old and new log files",
+            "parameters": "@report_folder@\\files\\old.xml @report_folder@\\files\new.xml",
+            "automation": null
+        }
+    }
+}

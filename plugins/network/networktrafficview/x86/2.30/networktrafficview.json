@@ -1,0 +1,37 @@
+{
+    "template": {
+        "name": "Network Traffic View",
+        "description": "Network Traffic View plugin"
+    },
+    "tool": {
+        "filename": "networktrafficview.exe",
+        "version": "2.30",
+        "type": "gui"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "start": {
+            "description": "Start",
+            "parameters": "/scomma @report_folder@\\files\\networktrafficview.csv /LoadConfig @tool_path@\\NetworkTrafficView.cfg /CaptureTime 0",
+            "automation": null
+        },
+        "stop": {
+            "description": "Stop",
+            "parameters": "/StopCommandLineCapture",
+            "automation": null
+        },
+        "collect": {
+            "description": "Collect",
+            "parameters": null,
+            "automation": null
+        }
+    }
+}

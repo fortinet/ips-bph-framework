@@ -1,0 +1,32 @@
+{
+    "template": {
+        "name": "NirCmd",
+        "description": "NirCmd plugin"
+    },
+    "tool": {
+        "filename": "nircmdc.exe",
+        "version": "2.85",
+        "type": "console"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": false
+        }
+    },
+    "actions": {
+        "kill_process": {
+            "description": "Kills a target process",
+            "parameters": "killprocess @program@",
+            "automation": null
+        },
+        "start_process": {
+            "description": "Starts a target process",
+            "parameters": "exec show @program@",
+            "automation": null
+        }
+    }
+}

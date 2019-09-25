@@ -1,0 +1,28 @@
+{
+    "template": {
+        "name": "OllyDbg",
+        "description": "OllyDbg plugin"
+    },
+    "tool": {
+        "filename": "ollydbg.exe",
+        "version": "1.10",
+        "type": "gui"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "action": "",
+        "ollyscript": {
+            "description": "Runs script by name",
+            "parameters": "@sample@",
+            "automation": "SWYgV2luRXhpc3RzKCJDb21wcmVzc2VkIGNvZGU/IiwgIlF1aWNrIHN0YXRpc3RpY2FsIikgVGhlbg0KICAgQ29udHJvbENsaWNrKCJDb21wcmVzc2VkIGNvZGU/IiwgIiIsICJbQ0xBU1M6QnV0dG9uOyBJTlNUQU5DRToxXSIsICJsZWZ0IikNCkVuZElmDQpXaW5BY3RpdmF0ZSgiW0NMQVNTOk9MTFlEQkddIikNClNlbmRLZWVwQWN0aXZlKCJbQ0xBU1M6T0xMWURCR10iLCAiT2xseURiZyIpDQpTZW5kKCIhe1B9IikNClNlbmQoIntET1dOfSIpDQpTZW5kKCJ7RE9XTn0iKQ0KU2VuZCgie0RPV059IikNClNlbmQoIntET1dOfSIpDQpTZW5kKCJ7RE9XTn0iKQ0KU2VuZCgie1JJR0hUfSIpDQpTZW5kKCJ7RU5URVJ9IikNClNsZWVwKDIwMDApDQpJZiBXaW5FeGlzdHMoIltDTEFTUzojMzI3NzBdIikgVGhlbg0KICAgQ29udHJvbFNldFRleHQoIltDTEFTUzojMzI3NzBdIiwgIiIsICJbQ0xBU1M6RWRpdDsgSU5TVEFOQ0U6MV0iLCAiQHRvb2xfcGF0aEBcb2xseXNjcmlwdHNcQG9sbHlzY3JpcHRfZmlsZV9uYW1lQCIsIDEpDQogICBTZW5kKCIhe099IikNCkVuZElm"
+        }
+    }
+}

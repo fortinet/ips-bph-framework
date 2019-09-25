@@ -1,0 +1,44 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 pestudio.py ~/bph-framework/misc/bph_upx.exe 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-25 09:57:46,746|INFO|bph.core.session| Setting sample: /home/bph/bph-framework/misc/bph_upx.exe
+2019-09-25 09:57:46,747|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-25 09:57:46,748|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-25 09:57:46,748|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-25 09:57:46,748|INFO|bph.core.server.template| Socket Ready
+2019-09-25 09:57:46,748|INFO|bph.core.server.template| Starting server listener..
+2019-09-25 09:57:46,748|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-25 09:57:46,821|INFO|bph.tools.windows.pestudio| Config file path: /home/bph/bph-framework/plugins/basic/static/pestudio/x86/8.64/pestudio.json
+2019-09-25 09:57:46,822|INFO|bph.tools.windows.pestudio| DEFAULT ACTION
+2019-09-25 09:57:46,822|INFO|bph.tools.windows.pestudio| Executing Template
+2019-09-25 09:57:46,965|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 55501)
+2019-09-25 09:57:48,825|INFO|bph.tools.windows.pestudio| Agent is Connected. Delivering Template now...
+2019-09-25 09:57:48,826|INFO|bph.tools.windows.pestudio| {'module_name': 'bph.tools.windows.pestudio', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '53d4d29384354bf74c2fb2b4f8996d04', 'project_name': 'blackhat_arsenal_2019', 'rid': 'bf006205-4b28-40d4-a626-fbcd7dc3550c', 'tool_drive': 'H:\\', 'tool_name': 'pestudio', 'arch': 'x86', 'version': '8.64', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/pestudio/x86', 'remote_tool_path': 'basic\\static\\pestudio\\x86\\8.64', 'template': <Box: {'name': 'PESTudio', 'description': 'PEStudio plugin'}>, 'tool': <Box: {'filename': 'pestudiox.exe', 'version': '8.64', 'type': 'console'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'default': {'description': 'Execute PEStudio Analysis on a target sample file', 'parameters': '-file:@sample@ -xml:@appdata@report.xml && move @appdata@report.xml @report_folder@\\files\\', 'automation': None}, 'action': 'default'}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/launcher/bph_upx.exe'}
+2019-09-25 09:57:48,827|INFO|bph.tools.windows.pestudio| Waiting to deliver template...
+2019-09-25 09:57:48,972|INFO|bph.core.server.template| Sending template...
+2019-09-25 09:57:48,972|INFO|bph.core.server.template| Waiting response from client...
+2019-09-25 09:57:53,832|INFO|bph.tools.windows.pestudio| Waiting to deliver template...
+2019-09-25 09:57:58,837|INFO|bph.tools.windows.pestudio| Waiting to deliver template...
+2019-09-25 09:58:03,840|INFO|bph.tools.windows.pestudio| Waiting to deliver template...
+2019-09-25 09:58:08,851|INFO|bph.tools.windows.pestudio| Waiting to deliver template...
+2019-09-25 09:58:12,544|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-25 09:58:13,857|INFO|bph.tools.windows.pestudio| Template has been delivered.
+2019-09-25 09:58:13,858|INFO|bph.tools.windows.pestudio| Next instruction will be sent in (0) seconds
+2019-09-25 09:58:18,869|INFO|bph.tools.windows.pestudio| Searching for files now in: /home/bph/bph-framework/session/blackhat_arsenal_2019/53d4d29384354bf74c2fb2b4f8996d04/5842f66b-1856-4292-ad86-bc72d0b78937/pestudio/bf006205-4b28-40d4-a626-fbcd7dc3550c
+2019-09-25 09:58:18,870|INFO|bph.tools.windows.pestudio| File: report.xml
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ 
+

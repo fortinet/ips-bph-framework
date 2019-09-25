@@ -1,0 +1,666 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 exeinfope_upx.py ~/bph-framework/misc/bph_upx.exe 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-24 18:14:29,199|INFO|bph.core.session| Setting sample: /home/bph/bph-framework/misc/bph_upx.exe
+2019-09-24 18:14:29,200|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-24 18:14:29,201|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-24 18:14:29,201|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-24 18:14:29,201|INFO|bph.core.server.template| Socket Ready
+2019-09-24 18:14:29,201|INFO|bph.core.server.template| Starting server listener..
+2019-09-24 18:14:29,202|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-24 18:14:29,244|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 54844)
+2019-09-24 18:14:29,275|INFO|bph.tools.windows.exeinfope| Config file path: /home/bph/bph-framework/plugins/basic/static/exeinfope/x86/0.0.3.5/exeinfope.json
+2019-09-24 18:14:29,276|INFO|bph.tools.windows.exeinfope| DEFAULT OPTION
+2019-09-24 18:14:29,276|INFO|bph.tools.windows.exeinfope| Executing Template
+2019-09-24 18:14:31,296|INFO|bph.tools.windows.exeinfope| Agent is Connected. Delivering Template now...
+2019-09-24 18:14:31,301|INFO|bph.tools.windows.exeinfope| {'module_name': 'bph.tools.windows.exeinfope', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '53d4d29384354bf74c2fb2b4f8996d04', 'project_name': 'blackhat_arsenal_2019', 'rid': 'ea5bd428-31c5-488d-beb6-11acd5d91dc4', 'tool_drive': 'H:\\', 'tool_name': 'exeinfope', 'arch': 'x86', 'version': '0.0.3.5', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/exeinfope/x86', 'remote_tool_path': 'basic\\static\\exeinfope\\x86\\0.0.3.5', 'template': <Box: {'name': 'ExeInfoPe', 'description': 'ExeInfoPe plugin'}>, 'tool': <Box: {'filename': 'exeinfope.exe', 'version': '0.0.3.5', 'type': 'gui'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'action': 'default', 'default': {'description': 'Starts BinText and pass sample as argument by automation', 'parameters': '@sample@', 'automation': 'JHJlcG9ydF9mb2xkZXIgPSAiQHJlcG9ydF9mb2xkZXJAIg0KJGxvZ2ZpbGUgPSAkcmVwb3J0X2ZvbGRlciAmICJcZXhlaW5mb3BlLmxvZyINCkZpbGVEZWxldGUoJGxvZ2ZpbGUpDQokZXhlaW5mb3BlID0gV2luQWN0aXZhdGUoIkV4ZWluZm8gUEUiKQ0KJG1zZyA9IENvbnRyb2xHZXRUZXh0KCRleGVpbmZvcGUsICIiLCAiW0NMQVNTOlRFZGl0OyBJTlNUQU5DRTo2XSIpDQokZiA9IEZpbGVPcGVuKCRsb2dmaWxlLCAyKQ0KRmlsZVdyaXRlKCRmLCAkbXNnKQ0KV2luQ2xvc2UoJGV4ZWluZm9wZSk='}}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/launcher/bph_upx.exe'}
+2019-09-24 18:14:31,304|INFO|bph.tools.windows.exeinfope| Waiting to deliver template...
+2019-09-24 18:14:32,255|INFO|bph.core.server.template| Sending template...
+2019-09-24 18:14:32,255|INFO|bph.core.server.template| Waiting response from client...
+2019-09-24 18:14:36,310|INFO|bph.tools.windows.exeinfope| Waiting to deliver template...
+2019-09-24 18:14:38,500|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-24 18:14:41,317|INFO|bph.tools.windows.exeinfope| Template has been delivered.
+2019-09-24 18:14:41,317|INFO|bph.tools.windows.exeinfope| Next instruction will be sent in (0) seconds
+2019-09-24 18:14:41,319|INFO|bph.tools.windows.exeinfope| Content: UPX 0.89 - 3.xx -> Markus & Laszlo ver. [ 3.91 ] <- from file. ( sign like UPX packer )
+SAMPLE IS UPX PACKED => VERSION 3.91. DECOMPRESSING...
+Imports: {'KERNEL32.DLL': [{'function': 'LoadLibraryA', 'address': '0x4e6814'}, {'function': 'GetProcAddress', 'address': '0x4e6818'}, {'function': 'VirtualProtect', 'address': '0x4e681c'}, {'function': 'VirtualAlloc', 'address': '0x4e6820'}, {'function': 'VirtualFree', 'address': '0x4e6824'}, {'function': 'ExitProcess', 'address': '0x4e6828'}], 'ADVAPI32.dll': [{'function': 'GetAce', 'address': '0x4e6830'}], 'COMCTL32.dll': [{'function': 'ImageList_Remove', 'address': '0x4e6838'}], 'COMDLG32.dll': [{'function': 'GetOpenFileNameW', 'address': '0x4e6840'}], 'GDI32.dll': [{'function': 'LineTo', 'address': '0x4e6848'}], 'IPHLPAPI.DLL': [{'function': 'IcmpSendEcho', 'address': '0x4e6850'}], 'MPR.dll': [{'function': 'WNetUseConnectionW', 'address': '0x4e6858'}], 'ole32.dll': [{'function': 'CoGetObject', 'address': '0x4e6860'}], 'OLEAUT32.dll': [{'function': 'VariantInit', 'address': '0x4e6868'}], 'PSAPI.DLL': [{'function': 'GetProcessMemoryInfo', 'address': '0x4e6870'}], 'SHELL32.dll': [{'function': 'DragFinish', 'address': '0x4e6878'}], 'USER32.dll': [{'function': 'GetDC', 'address': '0x4e6880'}], 'USERENV.dll': [{'function': 'LoadUserProfileW', 'address': '0x4e6888'}], 'UxTheme.dll': [{'function': 'IsThemeActive', 'address': '0x4e6890'}], 'VERSION.dll': [{'function': 'VerQueryValueW', 'address': '0x4e6898'}], 'WININET.dll': [{'function': 'FtpOpenFileW', 'address': '0x4e68a0'}], 'WINMM.dll': [{'function': 'timeGetTime', 'address': '0x4e68a8'}], 'WSOCK32.dll': [{'function': 'connect', 'address': '0x4e68b0'}]}
+KERNEL32.DLL
+{'function': 'LoadLibraryA', 'address': '0x4e6814'}
+{'function': 'GetProcAddress', 'address': '0x4e6818'}
+{'function': 'VirtualProtect', 'address': '0x4e681c'}
+{'function': 'VirtualAlloc', 'address': '0x4e6820'}
+{'function': 'VirtualFree', 'address': '0x4e6824'}
+{'function': 'ExitProcess', 'address': '0x4e6828'}
+ADVAPI32.dll
+{'function': 'GetAce', 'address': '0x4e6830'}
+COMCTL32.dll
+{'function': 'ImageList_Remove', 'address': '0x4e6838'}
+COMDLG32.dll
+{'function': 'GetOpenFileNameW', 'address': '0x4e6840'}
+GDI32.dll
+{'function': 'LineTo', 'address': '0x4e6848'}
+IPHLPAPI.DLL
+{'function': 'IcmpSendEcho', 'address': '0x4e6850'}
+MPR.dll
+{'function': 'WNetUseConnectionW', 'address': '0x4e6858'}
+ole32.dll
+{'function': 'CoGetObject', 'address': '0x4e6860'}
+OLEAUT32.dll
+{'function': 'VariantInit', 'address': '0x4e6868'}
+PSAPI.DLL
+{'function': 'GetProcessMemoryInfo', 'address': '0x4e6870'}
+SHELL32.dll
+{'function': 'DragFinish', 'address': '0x4e6878'}
+USER32.dll
+{'function': 'GetDC', 'address': '0x4e6880'}
+USERENV.dll
+{'function': 'LoadUserProfileW', 'address': '0x4e6888'}
+UxTheme.dll
+{'function': 'IsThemeActive', 'address': '0x4e6890'}
+VERSION.dll
+{'function': 'VerQueryValueW', 'address': '0x4e6898'}
+WININET.dll
+{'function': 'FtpOpenFileW', 'address': '0x4e68a0'}
+WINMM.dll
+{'function': 'timeGetTime', 'address': '0x4e68a8'}
+WSOCK32.dll
+{'function': 'connect', 'address': '0x4e68b0'}
+2019-09-24 18:14:41,340|INFO|bph.tools.windows.upx| Config file path: /home/bph/bph-framework/plugins/basic/static/upx/x86/3.91w/upx.json
+2019-09-24 18:14:41,340|INFO|bph.tools.windows.upx| DECOMPRESSING
+2019-09-24 18:14:41,340|INFO|bph.tools.windows.upx| Executing Template
+2019-09-24 18:14:43,343|INFO|bph.tools.windows.upx| Agent is Connected. Delivering Template now...
+2019-09-24 18:14:43,348|INFO|bph.tools.windows.upx| {'module_name': 'bph.tools.windows.upx', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '53d4d29384354bf74c2fb2b4f8996d04', 'project_name': 'blackhat_arsenal_2019', 'rid': '9038b8b7-1838-4b4c-847a-89c3ebc31da9', 'tool_drive': 'H:\\', 'tool_name': 'upx', 'arch': 'x86', 'version': '3.91w', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/upx/x86', 'remote_tool_path': 'basic\\static\\upx\\x86\\3.91w', 'template': <Box: {'name': 'UPX', 'description': 'UPX plugin'}>, 'tool': <Box: {'filename': 'upx.exe', 'version': '3.91w', 'type': 'console'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'decompress': {'description': "Decompress UPX'd file and generate its log for reporting", 'parameters': '-d @sample@ -o @report_folder@\\files\\unpacked.exe > @report_folder@\\upx.log', 'automation': None}, 'action': 'decompress'}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/launcher/bph_upx.exe'}
+2019-09-24 18:14:43,350|INFO|bph.tools.windows.upx| Waiting to deliver template...
+2019-09-24 18:14:43,517|INFO|bph.core.server.template| Sending template...
+2019-09-24 18:14:43,517|INFO|bph.core.server.template| Waiting response from client...
+2019-09-24 18:14:44,839|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-24 18:14:48,357|INFO|bph.tools.windows.upx| Template has been delivered.
+2019-09-24 18:14:48,357|INFO|bph.tools.windows.upx| Next instruction will be sent in (0) seconds
+2019-09-24 18:14:48,357|INFO|bph.tools.windows.upx| Content: Ultimate Packer for eXecutables
+2019-09-24 18:14:48,358|INFO|bph.tools.windows.upx| Content: Copyright (C) 1996 - 2013
+2019-09-24 18:14:48,358|INFO|bph.tools.windows.upx| Content: UPX 3.91w       Markus Oberhumer, Laszlo Molnar & John Reiser   Sep 30th 2013
+2019-09-24 18:14:48,358|INFO|bph.tools.windows.upx| Content: 
+2019-09-24 18:14:48,358|INFO|bph.tools.windows.upx| Content: File size         Ratio      Format      Name
+2019-09-24 18:14:48,358|INFO|bph.tools.windows.upx| Content: --------------------   ------   -----------   -----------
+2019-09-24 18:14:48,358|INFO|bph.tools.windows.upx| Content: 865792 <-    386048   44.59%    win32/pe     unpacked.exe
+2019-09-24 18:14:48,358|INFO|bph.tools.windows.upx| Content: 
+2019-09-24 18:14:48,358|INFO|bph.tools.windows.upx| Content: Unpacked 1 file.
+SAMPLE WAS SUCCESSFULLY UNPACKED...!!!11
+2019-09-24 18:14:53,364|INFO|bph.tools.windows.upx| Searching for files now in: /home/bph/bph-framework/session/blackhat_arsenal_2019/53d4d29384354bf74c2fb2b4f8996d04/5842f66b-1856-4292-ad86-bc72d0b78937/upx/9038b8b7-1838-4b4c-847a-89c3ebc31da9
+2019-09-24 18:14:53,365|INFO|bph.tools.windows.upx| File: upx.log
+2019-09-24 18:14:53,365|INFO|bph.tools.windows.upx| File: unpacked.exe
+2019-09-24 18:14:53,557|INFO|bph.tools.windows.exeinfope| Config file path: /home/bph/bph-framework/plugins/basic/static/exeinfope/x86/0.0.3.5/exeinfope.json
+2019-09-24 18:14:53,558|INFO|bph.tools.windows.exeinfope| DEFAULT OPTION
+2019-09-24 18:14:53,558|INFO|bph.tools.windows.exeinfope| Executing Template
+2019-09-24 18:14:55,559|INFO|bph.tools.windows.exeinfope| Agent is Connected. Delivering Template now...
+2019-09-24 18:14:55,560|INFO|bph.tools.windows.exeinfope| {'module_name': 'bph.tools.windows.exeinfope', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '53d4d29384354bf74c2fb2b4f8996d04', 'project_name': 'blackhat_arsenal_2019', 'rid': '9ccb993c-69e2-42e0-9f3c-6e8f714a880e', 'tool_drive': 'H:\\', 'tool_name': 'exeinfope', 'arch': 'x86', 'version': '0.0.3.5', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/exeinfope/x86', 'remote_tool_path': 'basic\\static\\exeinfope\\x86\\0.0.3.5', 'template': <Box: {'name': 'ExeInfoPe', 'description': 'ExeInfoPe plugin'}>, 'tool': <Box: {'filename': 'exeinfope.exe', 'version': '0.0.3.5', 'type': 'gui'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'action': 'default', 'default': {'description': 'Starts BinText and pass sample as argument by automation', 'parameters': '@sample@', 'automation': 'JHJlcG9ydF9mb2xkZXIgPSAiQHJlcG9ydF9mb2xkZXJAIg0KJGxvZ2ZpbGUgPSAkcmVwb3J0X2ZvbGRlciAmICJcZXhlaW5mb3BlLmxvZyINCkZpbGVEZWxldGUoJGxvZ2ZpbGUpDQokZXhlaW5mb3BlID0gV2luQWN0aXZhdGUoIkV4ZWluZm8gUEUiKQ0KJG1zZyA9IENvbnRyb2xHZXRUZXh0KCRleGVpbmZvcGUsICIiLCAiW0NMQVNTOlRFZGl0OyBJTlNUQU5DRTo2XSIpDQokZiA9IEZpbGVPcGVuKCRsb2dmaWxlLCAyKQ0KRmlsZVdyaXRlKCRmLCAkbXNnKQ0KV2luQ2xvc2UoJGV4ZWluZm9wZSk='}}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/53d4d29384354bf74c2fb2b4f8996d04/5842f66b-1856-4292-ad86-bc72d0b78937/upx/9038b8b7-1838-4b4c-847a-89c3ebc31da9/files/unpacked.exe'}
+2019-09-24 18:14:55,560|INFO|bph.tools.windows.exeinfope| Waiting to deliver template...
+2019-09-24 18:14:55,896|INFO|bph.core.server.template| Sending template...
+2019-09-24 18:14:55,897|INFO|bph.core.server.template| Waiting response from client...
+2019-09-24 18:15:00,566|INFO|bph.tools.windows.exeinfope| Waiting to deliver template...
+2019-09-24 18:15:02,156|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-24 18:15:05,570|INFO|bph.tools.windows.exeinfope| Template has been delivered.
+2019-09-24 18:15:05,570|INFO|bph.tools.windows.exeinfope| Next instruction will be sent in (0) seconds
+2019-09-24 18:15:05,571|INFO|bph.tools.windows.exeinfope| Content: Microsoft Visual C++ v.12 - 2013 ( E8 ) www.microsoft.com
+Imports: {'KERNEL32.DLL': [{'function': 'DuplicateHandle', 'address': '0x48f164'}, {'function': 'CreateThread', 'address': '0x48f168'}, {'function': 'WaitForSingleObject', 'address': '0x48f16c'}, {'function': 'HeapAlloc', 'address': '0x48f170'}, {'function': 'GetProcessHeap', 'address': '0x48f174'}, {'function': 'HeapFree', 'address': '0x48f178'}, {'function': 'Sleep', 'address': '0x48f17c'}, {'function': 'GetCurrentThreadId', 'address': '0x48f180'}, {'function': 'MultiByteToWideChar', 'address': '0x48f184'}, {'function': 'MulDiv', 'address': '0x48f188'}, {'function': 'GetVersionExW', 'address': '0x48f18c'}, {'function': 'IsWow64Process', 'address': '0x48f190'}, {'function': 'GetSystemInfo', 'address': '0x48f194'}, {'function': 'FreeLibrary', 'address': '0x48f198'}, {'function': 'LoadLibraryA', 'address': '0x48f19c'}, {'function': 'GetProcAddress', 'address': '0x48f1a0'}, {'function': 'SetErrorMode', 'address': '0x48f1a4'}, {'function': 'GetModuleFileNameW', 'address': '0x48f1a8'}, {'function': 'WideCharToMultiByte', 'address': '0x48f1ac'}, {'function': 'lstrcpyW', 'address': '0x48f1b0'}, {'function': 'lstrlenW', 'address': '0x48f1b4'}, {'function': 'GetModuleHandleW', 'address': '0x48f1b8'}, {'function': 'QueryPerformanceCounter', 'address': '0x48f1bc'}, {'function': 'VirtualFreeEx', 'address': '0x48f1c0'}, {'function': 'OpenProcess', 'address': '0x48f1c4'}, {'function': 'VirtualAllocEx', 'address': '0x48f1c8'}, {'function': 'WriteProcessMemory', 'address': '0x48f1cc'}, {'function': 'ReadProcessMemory', 'address': '0x48f1d0'}, {'function': 'CreateFileW', 'address': '0x48f1d4'}, {'function': 'SetFilePointerEx', 'address': '0x48f1d8'}, {'function': 'SetEndOfFile', 'address': '0x48f1dc'}, {'function': 'ReadFile', 'address': '0x48f1e0'}, {'function': 'WriteFile', 'address': '0x48f1e4'}, {'function': 'FlushFileBuffers', 'address': '0x48f1e8'}, {'function': 'TerminateProcess', 'address': '0x48f1ec'}, {'function': 'CreateToolhelp32Snapshot', 'address': '0x48f1f0'}, {'function': 'Process32FirstW', 'address': '0x48f1f4'}, {'function': 'Process32NextW', 'address': '0x48f1f8'}, {'function': 'SetFileTime', 'address': '0x48f1fc'}, {'function': 'GetFileAttributesW', 'address': '0x48f200'}, {'function': 'FindFirstFileW', 'address': '0x48f204'}, {'function': 'SetCurrentDirectoryW', 'address': '0x48f208'}, {'function': 'GetLongPathNameW', 'address': '0x48f20c'}, {'function': 'GetShortPathNameW', 'address': '0x48f210'}, {'function': 'DeleteFileW', 'address': '0x48f214'}, {'function': 'FindNextFileW', 'address': '0x48f218'}, {'function': 'CopyFileExW', 'address': '0x48f21c'}, {'function': 'MoveFileW', 'address': '0x48f220'}, {'function': 'CreateDirectoryW', 'address': '0x48f224'}, {'function': 'RemoveDirectoryW', 'address': '0x48f228'}, {'function': 'SetSystemPowerState', 'address': '0x48f22c'}, {'function': 'QueryPerformanceFrequency', 'address': '0x48f230'}, {'function': 'FindResourceW', 'address': '0x48f234'}, {'function': 'LoadResource', 'address': '0x48f238'}, {'function': 'LockResource', 'address': '0x48f23c'}, {'function': 'SizeofResource', 'address': '0x48f240'}, {'function': 'EnumResourceNamesW', 'address': '0x48f244'}, {'function': 'OutputDebugStringW', 'address': '0x48f248'}, {'function': 'GetTempPathW', 'address': '0x48f24c'}, {'function': 'GetTempFileNameW', 'address': '0x48f250'}, {'function': 'DeviceIoControl', 'address': '0x48f254'}, {'function': 'GetLocalTime', 'address': '0x48f258'}, {'function': 'CompareStringW', 'address': '0x48f25c'}, {'function': 'GetCurrentProcess', 'address': '0x48f260'}, {'function': 'EnterCriticalSection', 'address': '0x48f264'}, {'function': 'LeaveCriticalSection', 'address': '0x48f268'}, {'function': 'GetStdHandle', 'address': '0x48f26c'}, {'function': 'CreatePipe', 'address': '0x48f270'}, {'function': 'InterlockedExchange', 'address': '0x48f274'}, {'function': 'TerminateThread', 'address': '0x48f278'}, {'function': 'LoadLibraryExW', 'address': '0x48f27c'}, {'function': 'FindResourceExW', 'address': '0x48f280'}, {'function': 'CopyFileW', 'address': '0x48f284'}, {'function': 'VirtualFree', 'address': '0x48f288'}, {'function': 'FormatMessageW', 'address': '0x48f28c'}, {'function': 'GetExitCodeProcess', 'address': '0x48f290'}, {'function': 'GetPrivateProfileStringW', 'address': '0x48f294'}, {'function': 'WritePrivateProfileStringW', 'address': '0x48f298'}, {'function': 'GetPrivateProfileSectionW', 'address': '0x48f29c'}, {'function': 'WritePrivateProfileSectionW', 'address': '0x48f2a0'}, {'function': 'GetPrivateProfileSectionNamesW', 'address': '0x48f2a4'}, {'function': 'FileTimeToLocalFileTime', 'address': '0x48f2a8'}, {'function': 'FileTimeToSystemTime', 'address': '0x48f2ac'}, {'function': 'SystemTimeToFileTime', 'address': '0x48f2b0'}, {'function': 'LocalFileTimeToFileTime', 'address': '0x48f2b4'}, {'function': 'GetDriveTypeW', 'address': '0x48f2b8'}, {'function': 'GetDiskFreeSpaceExW', 'address': '0x48f2bc'}, {'function': 'GetDiskFreeSpaceW', 'address': '0x48f2c0'}, {'function': 'GetVolumeInformationW', 'address': '0x48f2c4'}, {'function': 'SetVolumeLabelW', 'address': '0x48f2c8'}, {'function': 'CreateHardLinkW', 'address': '0x48f2cc'}, {'function': 'SetFileAttributesW', 'address': '0x48f2d0'}, {'function': 'CreateEventW', 'address': '0x48f2d4'}, {'function': 'SetEvent', 'address': '0x48f2d8'}, {'function': 'GetEnvironmentVariableW', 'address': '0x48f2dc'}, {'function': 'SetEnvironmentVariableW', 'address': '0x48f2e0'}, {'function': 'GlobalLock', 'address': '0x48f2e4'}, {'function': 'GlobalUnlock', 'address': '0x48f2e8'}, {'function': 'GlobalAlloc', 'address': '0x48f2ec'}, {'function': 'GetFileSize', 'address': '0x48f2f0'}, {'function': 'GlobalFree', 'address': '0x48f2f4'}, {'function': 'GlobalMemoryStatusEx', 'address': '0x48f2f8'}, {'function': 'Beep', 'address': '0x48f2fc'}, {'function': 'GetSystemDirectoryW', 'address': '0x48f300'}, {'function': 'HeapReAlloc', 'address': '0x48f304'}, {'function': 'HeapSize', 'address': '0x48f308'}, {'function': 'GetComputerNameW', 'address': '0x48f30c'}, {'function': 'GetWindowsDirectoryW', 'address': '0x48f310'}, {'function': 'GetCurrentProcessId', 'address': '0x48f314'}, {'function': 'GetProcessIoCounters', 'address': '0x48f318'}, {'function': 'CreateProcessW', 'address': '0x48f31c'}, {'function': 'GetProcessId', 'address': '0x48f320'}, {'function': 'SetPriorityClass', 'address': '0x48f324'}, {'function': 'LoadLibraryW', 'address': '0x48f328'}, {'function': 'VirtualAlloc', 'address': '0x48f32c'}, {'function': 'IsDebuggerPresent', 'address': '0x48f330'}, {'function': 'GetCurrentDirectoryW', 'address': '0x48f334'}, {'function': 'lstrcmpiW', 'address': '0x48f338'}, {'function': 'DecodePointer', 'address': '0x48f33c'}, {'function': 'GetLastError', 'address': '0x48f340'}, {'function': 'RaiseException', 'address': '0x48f344'}, {'function': 'InitializeCriticalSectionAndSpinCount', 'address': '0x48f348'}, {'function': 'DeleteCriticalSection', 'address': '0x48f34c'}, {'function': 'InterlockedDecrement', 'address': '0x48f350'}, {'function': 'InterlockedIncrement', 'address': '0x48f354'}, {'function': 'GetCurrentThread', 'address': '0x48f358'}, {'function': 'CloseHandle', 'address': '0x48f35c'}, {'function': 'GetFullPathNameW', 'address': '0x48f360'}, {'function': 'EncodePointer', 'address': '0x48f364'}, {'function': 'ExitProcess', 'address': '0x48f368'}, {'function': 'GetModuleHandleExW', 'address': '0x48f36c'}, {'function': 'ExitThread', 'address': '0x48f370'}, {'function': 'GetSystemTimeAsFileTime', 'address': '0x48f374'}, {'function': 'ResumeThread', 'address': '0x48f378'}, {'function': 'GetCommandLineW', 'address': '0x48f37c'}, {'function': 'IsProcessorFeaturePresent', 'address': '0x48f380'}, {'function': 'IsValidCodePage', 'address': '0x48f384'}, {'function': 'GetACP', 'address': '0x48f388'}, {'function': 'GetOEMCP', 'address': '0x48f38c'}, {'function': 'GetCPInfo', 'address': '0x48f390'}, {'function': 'SetLastError', 'address': '0x48f394'}, {'function': 'UnhandledExceptionFilter', 'address': '0x48f398'}, {'function': 'SetUnhandledExceptionFilter', 'address': '0x48f39c'}, {'function': 'TlsAlloc', 'address': '0x48f3a0'}, {'function': 'TlsGetValue', 'address': '0x48f3a4'}, {'function': 'TlsSetValue', 'address': '0x48f3a8'}, {'function': 'TlsFree', 'address': '0x48f3ac'}, {'function': 'GetStartupInfoW', 'address': '0x48f3b0'}, {'function': 'GetStringTypeW', 'address': '0x48f3b4'}, {'function': 'SetStdHandle', 'address': '0x48f3b8'}, {'function': 'GetFileType', 'address': '0x48f3bc'}, {'function': 'GetConsoleCP', 'address': '0x48f3c0'}, {'function': 'GetConsoleMode', 'address': '0x48f3c4'}, {'function': 'RtlUnwind', 'address': '0x48f3c8'}, {'function': 'ReadConsoleW', 'address': '0x48f3cc'}, {'function': 'GetTimeZoneInformation', 'address': '0x48f3d0'}, {'function': 'GetDateFormatW', 'address': '0x48f3d4'}, {'function': 'GetTimeFormatW', 'address': '0x48f3d8'}, {'function': 'LCMapStringW', 'address': '0x48f3dc'}, {'function': 'GetEnvironmentStringsW', 'address': '0x48f3e0'}, {'function': 'FreeEnvironmentStringsW', 'address': '0x48f3e4'}, {'function': 'WriteConsoleW', 'address': '0x48f3e8'}, {'function': 'FindClose', 'address': '0x48f3ec'}, {'function': 'SetEnvironmentVariableA', 'address': '0x48f3f0'}], 'ADVAPI32.dll': [{'function': 'GetAce', 'address': '0x48f000'}, {'function': 'RegEnumValueW', 'address': '0x48f004'}, {'function': 'RegDeleteValueW', 'address': '0x48f008'}, {'function': 'RegDeleteKeyW', 'address': '0x48f00c'}, {'function': 'RegEnumKeyExW', 'address': '0x48f010'}, {'function': 'RegSetValueExW', 'address': '0x48f014'}, {'function': 'RegOpenKeyExW', 'address': '0x48f018'}, {'function': 'RegCloseKey', 'address': '0x48f01c'}, {'function': 'RegQueryValueExW', 'address': '0x48f020'}, {'function': 'RegConnectRegistryW', 'address': '0x48f024'}, {'function': 'InitializeSecurityDescriptor', 'address': '0x48f028'}, {'function': 'InitializeAcl', 'address': '0x48f02c'}, {'function': 'AdjustTokenPrivileges', 'address': '0x48f030'}, {'function': 'OpenThreadToken', 'address': '0x48f034'}, {'function': 'OpenProcessToken', 'address': '0x48f038'}, {'function': 'LookupPrivilegeValueW', 'address': '0x48f03c'}, {'function': 'DuplicateTokenEx', 'address': '0x48f040'}, {'function': 'CreateProcessAsUserW', 'address': '0x48f044'}, {'function': 'CreateProcessWithLogonW', 'address': '0x48f048'}, {'function': 'GetLengthSid', 'address': '0x48f04c'}, {'function': 'CopySid', 'address': '0x48f050'}, {'function': 'LogonUserW', 'address': '0x48f054'}, {'function': 'AllocateAndInitializeSid', 'address': '0x48f058'}, {'function': 'CheckTokenMembership', 'address': '0x48f05c'}, {'function': 'RegCreateKeyExW', 'address': '0x48f060'}, {'function': 'FreeSid', 'address': '0x48f064'}, {'function': 'GetTokenInformation', 'address': '0x48f068'}, {'function': 'GetSecurityDescriptorDacl', 'address': '0x48f06c'}, {'function': 'GetAclInformation', 'address': '0x48f070'}, {'function': 'AddAce', 'address': '0x48f074'}, {'function': 'SetSecurityDescriptorDacl', 'address': '0x48f078'}, {'function': 'GetUserNameW', 'address': '0x48f07c'}, {'function': 'InitiateSystemShutdownExW', 'address': '0x48f080'}], 'COMCTL32.dll': [{'function': 'ImageList_ReplaceIcon', 'address': '0x48f088'}, {'function': 'ImageList_Destroy', 'address': '0x48f08c'}, {'function': 'ImageList_Remove', 'address': '0x48f090'}, {'function': 'ImageList_SetDragCursorImage', 'address': '0x48f094'}, {'function': 'ImageList_BeginDrag', 'address': '0x48f098'}, {'function': 'ImageList_DragEnter', 'address': '0x48f09c'}, {'function': 'ImageList_DragLeave', 'address': '0x48f0a0'}, {'function': 'ImageList_EndDrag', 'address': '0x48f0a4'}, {'function': 'ImageList_DragMove', 'address': '0x48f0a8'}, {'function': 'InitCommonControlsEx', 'address': '0x48f0ac'}, {'function': 'ImageList_Create', 'address': '0x48f0b0'}], 'COMDLG32.dll': [{'function': 'GetOpenFileNameW', 'address': '0x48f0b8'}, {'function': 'GetSaveFileNameW', 'address': '0x48f0bc'}], 'GDI32.dll': [{'function': 'StrokePath', 'address': '0x48f0c4'}, {'function': 'DeleteObject', 'address': '0x48f0c8'}, {'function': 'GetTextExtentPoint32W', 'address': '0x48f0cc'}, {'function': 'ExtCreatePen', 'address': '0x48f0d0'}, {'function': 'GetDeviceCaps', 'address': '0x48f0d4'}, {'function': 'EndPath', 'address': '0x48f0d8'}, {'function': 'SetPixel', 'address': '0x48f0dc'}, {'function': 'CloseFigure', 'address': '0x48f0e0'}, {'function': 'CreateCompatibleBitmap', 'address': '0x48f0e4'}, {'function': 'CreateCompatibleDC', 'address': '0x48f0e8'}, {'function': 'SelectObject', 'address': '0x48f0ec'}, {'function': 'StretchBlt', 'address': '0x48f0f0'}, {'function': 'GetDIBits', 'address': '0x48f0f4'}, {'function': 'LineTo', 'address': '0x48f0f8'}, {'function': 'AngleArc', 'address': '0x48f0fc'}, {'function': 'MoveToEx', 'address': '0x48f100'}, {'function': 'Ellipse', 'address': '0x48f104'}, {'function': 'DeleteDC', 'address': '0x48f108'}, {'function': 'GetPixel', 'address': '0x48f10c'}, {'function': 'CreateDCW', 'address': '0x48f110'}, {'function': 'GetStockObject', 'address': '0x48f114'}, {'function': 'GetTextFaceW', 'address': '0x48f118'}, {'function': 'CreateFontW', 'address': '0x48f11c'}, {'function': 'SetTextColor', 'address': '0x48f120'}, {'function': 'PolyDraw', 'address': '0x48f124'}, {'function': 'BeginPath', 'address': '0x48f128'}, {'function': 'Rectangle', 'address': '0x48f12c'}, {'function': 'SetViewportOrgEx', 'address': '0x48f130'}, {'function': 'GetObjectW', 'address': '0x48f134'}, {'function': 'SetBkMode', 'address': '0x48f138'}, {'function': 'RoundRect', 'address': '0x48f13c'}, {'function': 'SetBkColor', 'address': '0x48f140'}, {'function': 'CreatePen', 'address': '0x48f144'}, {'function': 'CreateSolidBrush', 'address': '0x48f148'}, {'function': 'StrokeAndFillPath', 'address': '0x48f14c'}], 'IPHLPAPI.DLL': [{'function': 'IcmpCreateFile', 'address': '0x48f154'}, {'function': 'IcmpCloseHandle', 'address': '0x48f158'}, {'function': 'IcmpSendEcho', 'address': '0x48f15c'}], 'MPR.dll': [{'function': 'WNetUseConnectionW', 'address': '0x48f3f8'}, {'function': 'WNetCancelConnection2W', 'address': '0x48f3fc'}, {'function': 'WNetGetConnectionW', 'address': '0x48f400'}, {'function': 'WNetAddConnection2W', 'address': '0x48f404'}], 'ole32.dll': [{'function': 'CoTaskMemAlloc', 'address': '0x48f828'}, {'function': 'CoTaskMemFree', 'address': '0x48f82c'}, {'function': 'CLSIDFromString', 'address': '0x48f830'}, {'function': 'ProgIDFromCLSID', 'address': '0x48f834'}, {'function': 'CLSIDFromProgID', 'address': '0x48f838'}, {'function': 'OleSetMenuDescriptor', 'address': '0x48f83c'}, {'function': 'MkParseDisplayName', 'address': '0x48f840'}, {'function': 'OleSetContainedObject', 'address': '0x48f844'}, {'function': 'CoCreateInstance', 'address': '0x48f848'}, {'function': 'IIDFromString', 'address': '0x48f84c'}, {'function': 'StringFromGUID2', 'address': '0x48f850'}, {'function': 'CreateStreamOnHGlobal', 'address': '0x48f854'}, {'function': 'OleInitialize', 'address': '0x48f858'}, {'function': 'OleUninitialize', 'address': '0x48f85c'}, {'function': 'CoInitialize', 'address': '0x48f860'}, {'function': 'CoUninitialize', 'address': '0x48f864'}, {'function': 'GetRunningObjectTable', 'address': '0x48f868'}, {'function': 'CoGetInstanceFromFile', 'address': '0x48f86c'}, {'function': 'CoGetObject', 'address': '0x48f870'}, {'function': 'CoSetProxyBlanket', 'address': '0x48f874'}, {'function': 'CoCreateInstanceEx', 'address': '0x48f878'}, {'function': 'CoInitializeSecurity', 'address': '0x48f87c'}], 'OLEAUT32.dll': [{'function': 'LoadTypeLibEx', 'address': '0x48f40c'}, {'function': 'VariantCopyInd', 'address': '0x48f410'}, {'function': 'SysReAllocString', 'address': '0x48f414'}, {'function': 'SysFreeString', 'address': '0x48f418'}, {'function': 'SafeArrayDestroyDescriptor', 'address': '0x48f41c'}, {'function': 'SafeArrayDestroyData', 'address': '0x48f420'}, {'function': 'SafeArrayUnaccessData', 'address': '0x48f424'}, {'function': 'SafeArrayAccessData', 'address': '0x48f428'}, {'function': 'SafeArrayAllocData', 'address': '0x48f42c'}, {'function': 'SafeArrayAllocDescriptorEx', 'address': '0x48f430'}, {'function': 'SafeArrayCreateVector', 'address': '0x48f434'}, {'function': 'RegisterTypeLib', 'address': '0x48f438'}, {'function': 'CreateStdDispatch', 'address': '0x48f43c'}, {'function': 'DispCallFunc', 'address': '0x48f440'}, {'function': 'VariantChangeType', 'address': '0x48f444'}, {'function': 'SysStringLen', 'address': '0x48f448'}, {'function': 'VariantTimeToSystemTime', 'address': '0x48f44c'}, {'function': 'VarR8FromDec', 'address': '0x48f450'}, {'function': 'SafeArrayGetVartype', 'address': '0x48f454'}, {'function': 'VariantCopy', 'address': '0x48f458'}, {'function': 'VariantClear', 'address': '0x48f45c'}, {'function': 'OleLoadPicture', 'address': '0x48f460'}, {'function': 'QueryPathOfRegTypeLib', 'address': '0x48f464'}, {'function': 'RegisterTypeLibForUser', 'address': '0x48f468'}, {'function': 'UnRegisterTypeLibForUser', 'address': '0x48f46c'}, {'function': 'UnRegisterTypeLib', 'address': '0x48f470'}, {'function': 'CreateDispTypeInfo', 'address': '0x48f474'}, {'function': 'SysAllocString', 'address': '0x48f478'}, {'function': 'VariantInit', 'address': '0x48f47c'}], 'PSAPI.DLL': [{'function': 'GetProcessMemoryInfo', 'address': '0x48f484'}], 'SHELL32.dll': [{'function': 'DragQueryPoint', 'address': '0x48f48c'}, {'function': 'ShellExecuteExW', 'address': '0x48f490'}, {'function': 'DragQueryFileW', 'address': '0x48f494'}, {'function': 'SHEmptyRecycleBinW', 'address': '0x48f498'}, {'function': 'SHGetPathFromIDListW', 'address': '0x48f49c'}, {'function': 'SHBrowseForFolderW', 'address': '0x48f4a0'}, {'function': 'SHCreateShellItem', 'address': '0x48f4a4'}, {'function': 'SHGetDesktopFolder', 'address': '0x48f4a8'}, {'function': 'SHGetSpecialFolderLocation', 'address': '0x48f4ac'}, {'function': 'SHGetFolderPathW', 'address': '0x48f4b0'}, {'function': 'SHFileOperationW', 'address': '0x48f4b4'}, {'function': 'ExtractIconExW', 'address': '0x48f4b8'}, {'function': 'Shell_NotifyIconW', 'address': '0x48f4bc'}, {'function': 'ShellExecuteW', 'address': '0x48f4c0'}, {'function': 'DragFinish', 'address': '0x48f4c4'}], 'USER32.dll': [{'function': 'AdjustWindowRectEx', 'address': '0x48f4cc'}, {'function': 'CopyImage', 'address': '0x48f4d0'}, {'function': 'SetWindowPos', 'address': '0x48f4d4'}, {'function': 'GetCursorInfo', 'address': '0x48f4d8'}, {'function': 'RegisterHotKey', 'address': '0x48f4dc'}, {'function': 'ClientToScreen', 'address': '0x48f4e0'}, {'function': 'GetKeyboardLayoutNameW', 'address': '0x48f4e4'}, {'function': 'IsCharAlphaW', 'address': '0x48f4e8'}, {'function': 'IsCharAlphaNumericW', 'address': '0x48f4ec'}, {'function': 'IsCharLowerW', 'address': '0x48f4f0'}, {'function': 'IsCharUpperW', 'address': '0x48f4f4'}, {'function': 'GetMenuStringW', 'address': '0x48f4f8'}, {'function': 'GetSubMenu', 'address': '0x48f4fc'}, {'function': 'GetCaretPos', 'address': '0x48f500'}, {'function': 'IsZoomed', 'address': '0x48f504'}, {'function': 'MonitorFromPoint', 'address': '0x48f508'}, {'function': 'GetMonitorInfoW', 'address': '0x48f50c'}, {'function': 'SetWindowLongW', 'address': '0x48f510'}, {'function': 'SetLayeredWindowAttributes', 'address': '0x48f514'}, {'function': 'FlashWindow', 'address': '0x48f518'}, {'function': 'GetClassLongW', 'address': '0x48f51c'}, {'function': 'TranslateAcceleratorW', 'address': '0x48f520'}, {'function': 'IsDialogMessageW', 'address': '0x48f524'}, {'function': 'GetSysColor', 'address': '0x48f528'}, {'function': 'InflateRect', 'address': '0x48f52c'}, {'function': 'DrawFocusRect', 'address': '0x48f530'}, {'function': 'DrawTextW', 'address': '0x48f534'}, {'function': 'FrameRect', 'address': '0x48f538'}, {'function': 'DrawFrameControl', 'address': '0x48f53c'}, {'function': 'FillRect', 'address': '0x48f540'}, {'function': 'PtInRect', 'address': '0x48f544'}, {'function': 'DestroyAcceleratorTable', 'address': '0x48f548'}, {'function': 'CreateAcceleratorTableW', 'address': '0x48f54c'}, {'function': 'SetCursor', 'address': '0x48f550'}, {'function': 'GetWindowDC', 'address': '0x48f554'}, {'function': 'GetSystemMetrics', 'address': '0x48f558'}, {'function': 'GetActiveWindow', 'address': '0x48f55c'}, {'function': 'CharNextW', 'address': '0x48f560'}, {'function': 'wsprintfW', 'address': '0x48f564'}, {'function': 'RedrawWindow', 'address': '0x48f568'}, {'function': 'DrawMenuBar', 'address': '0x48f56c'}, {'function': 'DestroyMenu', 'address': '0x48f570'}, {'function': 'SetMenu', 'address': '0x48f574'}, {'function': 'GetWindowTextLengthW', 'address': '0x48f578'}, {'function': 'CreateMenu', 'address': '0x48f57c'}, {'function': 'IsDlgButtonChecked', 'address': '0x48f580'}, {'function': 'DefDlgProcW', 'address': '0x48f584'}, {'function': 'CallWindowProcW', 'address': '0x48f588'}, {'function': 'ReleaseCapture', 'address': '0x48f58c'}, {'function': 'SetCapture', 'address': '0x48f590'}, {'function': 'CreateIconFromResourceEx', 'address': '0x48f594'}, {'function': 'mouse_event', 'address': '0x48f598'}, {'function': 'ExitWindowsEx', 'address': '0x48f59c'}, {'function': 'SetActiveWindow', 'address': '0x48f5a0'}, {'function': 'FindWindowExW', 'address': '0x48f5a4'}, {'function': 'EnumThreadWindows', 'address': '0x48f5a8'}, {'function': 'SetMenuDefaultItem', 'address': '0x48f5ac'}, {'function': 'InsertMenuItemW', 'address': '0x48f5b0'}, {'function': 'IsMenu', 'address': '0x48f5b4'}, {'function': 'TrackPopupMenuEx', 'address': '0x48f5b8'}, {'function': 'GetCursorPos', 'address': '0x48f5bc'}, {'function': 'DeleteMenu', 'address': '0x48f5c0'}, {'function': 'SetRect', 'address': '0x48f5c4'}, {'function': 'GetMenuItemID', 'address': '0x48f5c8'}, {'function': 'GetMenuItemCount', 'address': '0x48f5cc'}, {'function': 'SetMenuItemInfoW', 'address': '0x48f5d0'}, {'function': 'GetMenuItemInfoW', 'address': '0x48f5d4'}, {'function': 'SetForegroundWindow', 'address': '0x48f5d8'}, {'function': 'IsIconic', 'address': '0x48f5dc'}, {'function': 'FindWindowW', 'address': '0x48f5e0'}, {'function': 'MonitorFromRect', 'address': '0x48f5e4'}, {'function': 'keybd_event', 'address': '0x48f5e8'}, {'function': 'SendInput', 'address': '0x48f5ec'}, {'function': 'GetAsyncKeyState', 'address': '0x48f5f0'}, {'function': 'SetKeyboardState', 'address': '0x48f5f4'}, {'function': 'GetKeyboardState', 'address': '0x48f5f8'}, {'function': 'GetKeyState', 'address': '0x48f5fc'}, {'function': 'VkKeyScanW', 'address': '0x48f600'}, {'function': 'LoadStringW', 'address': '0x48f604'}, {'function': 'DialogBoxParamW', 'address': '0x48f608'}, {'function': 'MessageBeep', 'address': '0x48f60c'}, {'function': 'EndDialog', 'address': '0x48f610'}, {'function': 'SendDlgItemMessageW', 'address': '0x48f614'}, {'function': 'GetDlgItem', 'address': '0x48f618'}, {'function': 'SetWindowTextW', 'address': '0x48f61c'}, {'function': 'CopyRect', 'address': '0x48f620'}, {'function': 'ReleaseDC', 'address': '0x48f624'}, {'function': 'GetDC', 'address': '0x48f628'}, {'function': 'EndPaint', 'address': '0x48f62c'}, {'function': 'BeginPaint', 'address': '0x48f630'}, {'function': 'GetClientRect', 'address': '0x48f634'}, {'function': 'GetMenu', 'address': '0x48f638'}, {'function': 'DestroyWindow', 'address': '0x48f63c'}, {'function': 'EnumWindows', 'address': '0x48f640'}, {'function': 'GetDesktopWindow', 'address': '0x48f644'}, {'function': 'IsWindow', 'address': '0x48f648'}, {'function': 'IsWindowEnabled', 'address': '0x48f64c'}, {'function': 'IsWindowVisible', 'address': '0x48f650'}, {'function': 'EnableWindow', 'address': '0x48f654'}, {'function': 'InvalidateRect', 'address': '0x48f658'}, {'function': 'GetWindowLongW', 'address': '0x48f65c'}, {'function': 'GetWindowThreadProcessId', 'address': '0x48f660'}, {'function': 'AttachThreadInput', 'address': '0x48f664'}, {'function': 'GetFocus', 'address': '0x48f668'}, {'function': 'GetWindowTextW', 'address': '0x48f66c'}, {'function': 'ScreenToClient', 'address': '0x48f670'}, {'function': 'SendMessageTimeoutW', 'address': '0x48f674'}, {'function': 'EnumChildWindows', 'address': '0x48f678'}, {'function': 'CharUpperBuffW', 'address': '0x48f67c'}, {'function': 'GetParent', 'address': '0x48f680'}, {'function': 'GetDlgCtrlID', 'address': '0x48f684'}, {'function': 'SendMessageW', 'address': '0x48f688'}, {'function': 'MapVirtualKeyW', 'address': '0x48f68c'}, {'function': 'PostMessageW', 'address': '0x48f690'}, {'function': 'GetWindowRect', 'address': '0x48f694'}, {'function': 'SetUserObjectSecurity', 'address': '0x48f698'}, {'function': 'CloseDesktop', 'address': '0x48f69c'}, {'function': 'CloseWindowStation', 'address': '0x48f6a0'}, {'function': 'OpenDesktopW', 'address': '0x48f6a4'}, {'function': 'SetProcessWindowStation', 'address': '0x48f6a8'}, {'function': 'GetProcessWindowStation', 'address': '0x48f6ac'}, {'function': 'OpenWindowStationW', 'address': '0x48f6b0'}, {'function': 'GetUserObjectSecurity', 'address': '0x48f6b4'}, {'function': 'MessageBoxW', 'address': '0x48f6b8'}, {'function': 'DefWindowProcW', 'address': '0x48f6bc'}, {'function': 'SetClipboardData', 'address': '0x48f6c0'}, {'function': 'EmptyClipboard', 'address': '0x48f6c4'}, {'function': 'CountClipboardFormats', 'address': '0x48f6c8'}, {'function': 'CloseClipboard', 'address': '0x48f6cc'}, {'function': 'GetClipboardData', 'address': '0x48f6d0'}, {'function': 'IsClipboardFormatAvailable', 'address': '0x48f6d4'}, {'function': 'OpenClipboard', 'address': '0x48f6d8'}, {'function': 'BlockInput', 'address': '0x48f6dc'}, {'function': 'GetMessageW', 'address': '0x48f6e0'}, {'function': 'LockWindowUpdate', 'address': '0x48f6e4'}, {'function': 'DispatchMessageW', 'address': '0x48f6e8'}, {'function': 'TranslateMessage', 'address': '0x48f6ec'}, {'function': 'PeekMessageW', 'address': '0x48f6f0'}, {'function': 'UnregisterHotKey', 'address': '0x48f6f4'}, {'function': 'CheckMenuRadioItem', 'address': '0x48f6f8'}, {'function': 'CharLowerBuffW', 'address': '0x48f6fc'}, {'function': 'MoveWindow', 'address': '0x48f700'}, {'function': 'SetFocus', 'address': '0x48f704'}, {'function': 'PostQuitMessage', 'address': '0x48f708'}, {'function': 'KillTimer', 'address': '0x48f70c'}, {'function': 'CreatePopupMenu', 'address': '0x48f710'}, {'function': 'RegisterWindowMessageW', 'address': '0x48f714'}, {'function': 'SetTimer', 'address': '0x48f718'}, {'function': 'ShowWindow', 'address': '0x48f71c'}, {'function': 'CreateWindowExW', 'address': '0x48f720'}, {'function': 'RegisterClassExW', 'address': '0x48f724'}, {'function': 'LoadIconW', 'address': '0x48f728'}, {'function': 'LoadCursorW', 'address': '0x48f72c'}, {'function': 'GetSysColorBrush', 'address': '0x48f730'}, {'function': 'GetForegroundWindow', 'address': '0x48f734'}, {'function': 'MessageBoxA', 'address': '0x48f738'}, {'function': 'DestroyIcon', 'address': '0x48f73c'}, {'function': 'SystemParametersInfoW', 'address': '0x48f740'}, {'function': 'LoadImageW', 'address': '0x48f744'}, {'function': 'GetClassNameW', 'address': '0x48f748'}], 'USERENV.dll': [{'function': 'DestroyEnvironmentBlock', 'address': '0x48f750'}, {'function': 'UnloadUserProfile', 'address': '0x48f754'}, {'function': 'CreateEnvironmentBlock', 'address': '0x48f758'}, {'function': 'LoadUserProfileW', 'address': '0x48f75c'}], 'UxTheme.dll': [{'function': 'IsThemeActive', 'address': '0x48f764'}], 'VERSION.dll': [{'function': 'GetFileVersionInfoW', 'address': '0x48f76c'}, {'function': 'GetFileVersionInfoSizeW', 'address': '0x48f770'}, {'function': 'VerQueryValueW', 'address': '0x48f774'}], 'WININET.dll': [{'function': 'InternetQueryDataAvailable', 'address': '0x48f77c'}, {'function': 'InternetCloseHandle', 'address': '0x48f780'}, {'function': 'InternetOpenW', 'address': '0x48f784'}, {'function': 'InternetSetOptionW', 'address': '0x48f788'}, {'function': 'InternetCrackUrlW', 'address': '0x48f78c'}, {'function': 'HttpQueryInfoW', 'address': '0x48f790'}, {'function': 'InternetQueryOptionW', 'address': '0x48f794'}, {'function': 'HttpOpenRequestW', 'address': '0x48f798'}, {'function': 'HttpSendRequestW', 'address': '0x48f79c'}, {'function': 'FtpOpenFileW', 'address': '0x48f7a0'}, {'function': 'FtpGetFileSize', 'address': '0x48f7a4'}, {'function': 'InternetOpenUrlW', 'address': '0x48f7a8'}, {'function': 'InternetReadFile', 'address': '0x48f7ac'}, {'function': 'InternetConnectW', 'address': '0x48f7b0'}], 'WINMM.dll': [{'function': 'timeGetTime', 'address': '0x48f7b8'}, {'function': 'waveOutSetVolume', 'address': '0x48f7bc'}, {'function': 'mciSendStringW', 'address': '0x48f7c0'}], 'WSOCK32.dll': [{'function': 'WSACleanup', 'address': '0x48f7c8'}, {'function': 'socket', 'address': '0x48f7cc'}, {'function': 'inet_ntoa', 'address': '0x48f7d0'}, {'function': 'setsockopt', 'address': '0x48f7d4'}, {'function': 'ntohs', 'address': '0x48f7d8'}, {'function': 'recvfrom', 'address': '0x48f7dc'}, {'function': 'ioctlsocket', 'address': '0x48f7e0'}, {'function': 'htons', 'address': '0x48f7e4'}, {'function': 'WSAStartup', 'address': '0x48f7e8'}, {'function': '__WSAFDIsSet', 'address': '0x48f7ec'}, {'function': 'select', 'address': '0x48f7f0'}, {'function': 'accept', 'address': '0x48f7f4'}, {'function': 'listen', 'address': '0x48f7f8'}, {'function': 'bind', 'address': '0x48f7fc'}, {'function': 'closesocket', 'address': '0x48f800'}, {'function': 'WSAGetLastError', 'address': '0x48f804'}, {'function': 'recv', 'address': '0x48f808'}, {'function': 'sendto', 'address': '0x48f80c'}, {'function': 'send', 'address': '0x48f810'}, {'function': 'inet_addr', 'address': '0x48f814'}, {'function': 'gethostbyname', 'address': '0x48f818'}, {'function': 'gethostname', 'address': '0x48f81c'}, {'function': 'connect', 'address': '0x48f820'}]}
+KERNEL32.DLL
+{'function': 'DuplicateHandle', 'address': '0x48f164'}
+{'function': 'CreateThread', 'address': '0x48f168'}
+{'function': 'WaitForSingleObject', 'address': '0x48f16c'}
+{'function': 'HeapAlloc', 'address': '0x48f170'}
+{'function': 'GetProcessHeap', 'address': '0x48f174'}
+{'function': 'HeapFree', 'address': '0x48f178'}
+{'function': 'Sleep', 'address': '0x48f17c'}
+{'function': 'GetCurrentThreadId', 'address': '0x48f180'}
+{'function': 'MultiByteToWideChar', 'address': '0x48f184'}
+{'function': 'MulDiv', 'address': '0x48f188'}
+{'function': 'GetVersionExW', 'address': '0x48f18c'}
+{'function': 'IsWow64Process', 'address': '0x48f190'}
+{'function': 'GetSystemInfo', 'address': '0x48f194'}
+{'function': 'FreeLibrary', 'address': '0x48f198'}
+{'function': 'LoadLibraryA', 'address': '0x48f19c'}
+{'function': 'GetProcAddress', 'address': '0x48f1a0'}
+{'function': 'SetErrorMode', 'address': '0x48f1a4'}
+{'function': 'GetModuleFileNameW', 'address': '0x48f1a8'}
+{'function': 'WideCharToMultiByte', 'address': '0x48f1ac'}
+{'function': 'lstrcpyW', 'address': '0x48f1b0'}
+{'function': 'lstrlenW', 'address': '0x48f1b4'}
+{'function': 'GetModuleHandleW', 'address': '0x48f1b8'}
+{'function': 'QueryPerformanceCounter', 'address': '0x48f1bc'}
+{'function': 'VirtualFreeEx', 'address': '0x48f1c0'}
+{'function': 'OpenProcess', 'address': '0x48f1c4'}
+{'function': 'VirtualAllocEx', 'address': '0x48f1c8'}
+{'function': 'WriteProcessMemory', 'address': '0x48f1cc'}
+{'function': 'ReadProcessMemory', 'address': '0x48f1d0'}
+{'function': 'CreateFileW', 'address': '0x48f1d4'}
+{'function': 'SetFilePointerEx', 'address': '0x48f1d8'}
+{'function': 'SetEndOfFile', 'address': '0x48f1dc'}
+{'function': 'ReadFile', 'address': '0x48f1e0'}
+{'function': 'WriteFile', 'address': '0x48f1e4'}
+{'function': 'FlushFileBuffers', 'address': '0x48f1e8'}
+{'function': 'TerminateProcess', 'address': '0x48f1ec'}
+{'function': 'CreateToolhelp32Snapshot', 'address': '0x48f1f0'}
+{'function': 'Process32FirstW', 'address': '0x48f1f4'}
+{'function': 'Process32NextW', 'address': '0x48f1f8'}
+{'function': 'SetFileTime', 'address': '0x48f1fc'}
+{'function': 'GetFileAttributesW', 'address': '0x48f200'}
+{'function': 'FindFirstFileW', 'address': '0x48f204'}
+{'function': 'SetCurrentDirectoryW', 'address': '0x48f208'}
+{'function': 'GetLongPathNameW', 'address': '0x48f20c'}
+{'function': 'GetShortPathNameW', 'address': '0x48f210'}
+{'function': 'DeleteFileW', 'address': '0x48f214'}
+{'function': 'FindNextFileW', 'address': '0x48f218'}
+{'function': 'CopyFileExW', 'address': '0x48f21c'}
+{'function': 'MoveFileW', 'address': '0x48f220'}
+{'function': 'CreateDirectoryW', 'address': '0x48f224'}
+{'function': 'RemoveDirectoryW', 'address': '0x48f228'}
+{'function': 'SetSystemPowerState', 'address': '0x48f22c'}
+{'function': 'QueryPerformanceFrequency', 'address': '0x48f230'}
+{'function': 'FindResourceW', 'address': '0x48f234'}
+{'function': 'LoadResource', 'address': '0x48f238'}
+{'function': 'LockResource', 'address': '0x48f23c'}
+{'function': 'SizeofResource', 'address': '0x48f240'}
+{'function': 'EnumResourceNamesW', 'address': '0x48f244'}
+{'function': 'OutputDebugStringW', 'address': '0x48f248'}
+{'function': 'GetTempPathW', 'address': '0x48f24c'}
+{'function': 'GetTempFileNameW', 'address': '0x48f250'}
+{'function': 'DeviceIoControl', 'address': '0x48f254'}
+{'function': 'GetLocalTime', 'address': '0x48f258'}
+{'function': 'CompareStringW', 'address': '0x48f25c'}
+{'function': 'GetCurrentProcess', 'address': '0x48f260'}
+{'function': 'EnterCriticalSection', 'address': '0x48f264'}
+{'function': 'LeaveCriticalSection', 'address': '0x48f268'}
+{'function': 'GetStdHandle', 'address': '0x48f26c'}
+{'function': 'CreatePipe', 'address': '0x48f270'}
+{'function': 'InterlockedExchange', 'address': '0x48f274'}
+{'function': 'TerminateThread', 'address': '0x48f278'}
+{'function': 'LoadLibraryExW', 'address': '0x48f27c'}
+{'function': 'FindResourceExW', 'address': '0x48f280'}
+{'function': 'CopyFileW', 'address': '0x48f284'}
+{'function': 'VirtualFree', 'address': '0x48f288'}
+{'function': 'FormatMessageW', 'address': '0x48f28c'}
+{'function': 'GetExitCodeProcess', 'address': '0x48f290'}
+{'function': 'GetPrivateProfileStringW', 'address': '0x48f294'}
+{'function': 'WritePrivateProfileStringW', 'address': '0x48f298'}
+{'function': 'GetPrivateProfileSectionW', 'address': '0x48f29c'}
+{'function': 'WritePrivateProfileSectionW', 'address': '0x48f2a0'}
+{'function': 'GetPrivateProfileSectionNamesW', 'address': '0x48f2a4'}
+{'function': 'FileTimeToLocalFileTime', 'address': '0x48f2a8'}
+{'function': 'FileTimeToSystemTime', 'address': '0x48f2ac'}
+{'function': 'SystemTimeToFileTime', 'address': '0x48f2b0'}
+{'function': 'LocalFileTimeToFileTime', 'address': '0x48f2b4'}
+{'function': 'GetDriveTypeW', 'address': '0x48f2b8'}
+{'function': 'GetDiskFreeSpaceExW', 'address': '0x48f2bc'}
+{'function': 'GetDiskFreeSpaceW', 'address': '0x48f2c0'}
+{'function': 'GetVolumeInformationW', 'address': '0x48f2c4'}
+{'function': 'SetVolumeLabelW', 'address': '0x48f2c8'}
+{'function': 'CreateHardLinkW', 'address': '0x48f2cc'}
+{'function': 'SetFileAttributesW', 'address': '0x48f2d0'}
+{'function': 'CreateEventW', 'address': '0x48f2d4'}
+{'function': 'SetEvent', 'address': '0x48f2d8'}
+{'function': 'GetEnvironmentVariableW', 'address': '0x48f2dc'}
+{'function': 'SetEnvironmentVariableW', 'address': '0x48f2e0'}
+{'function': 'GlobalLock', 'address': '0x48f2e4'}
+{'function': 'GlobalUnlock', 'address': '0x48f2e8'}
+{'function': 'GlobalAlloc', 'address': '0x48f2ec'}
+{'function': 'GetFileSize', 'address': '0x48f2f0'}
+{'function': 'GlobalFree', 'address': '0x48f2f4'}
+{'function': 'GlobalMemoryStatusEx', 'address': '0x48f2f8'}
+{'function': 'Beep', 'address': '0x48f2fc'}
+{'function': 'GetSystemDirectoryW', 'address': '0x48f300'}
+{'function': 'HeapReAlloc', 'address': '0x48f304'}
+{'function': 'HeapSize', 'address': '0x48f308'}
+{'function': 'GetComputerNameW', 'address': '0x48f30c'}
+{'function': 'GetWindowsDirectoryW', 'address': '0x48f310'}
+{'function': 'GetCurrentProcessId', 'address': '0x48f314'}
+{'function': 'GetProcessIoCounters', 'address': '0x48f318'}
+{'function': 'CreateProcessW', 'address': '0x48f31c'}
+{'function': 'GetProcessId', 'address': '0x48f320'}
+{'function': 'SetPriorityClass', 'address': '0x48f324'}
+{'function': 'LoadLibraryW', 'address': '0x48f328'}
+{'function': 'VirtualAlloc', 'address': '0x48f32c'}
+{'function': 'IsDebuggerPresent', 'address': '0x48f330'}
+{'function': 'GetCurrentDirectoryW', 'address': '0x48f334'}
+{'function': 'lstrcmpiW', 'address': '0x48f338'}
+{'function': 'DecodePointer', 'address': '0x48f33c'}
+{'function': 'GetLastError', 'address': '0x48f340'}
+{'function': 'RaiseException', 'address': '0x48f344'}
+{'function': 'InitializeCriticalSectionAndSpinCount', 'address': '0x48f348'}
+{'function': 'DeleteCriticalSection', 'address': '0x48f34c'}
+{'function': 'InterlockedDecrement', 'address': '0x48f350'}
+{'function': 'InterlockedIncrement', 'address': '0x48f354'}
+{'function': 'GetCurrentThread', 'address': '0x48f358'}
+{'function': 'CloseHandle', 'address': '0x48f35c'}
+{'function': 'GetFullPathNameW', 'address': '0x48f360'}
+{'function': 'EncodePointer', 'address': '0x48f364'}
+{'function': 'ExitProcess', 'address': '0x48f368'}
+{'function': 'GetModuleHandleExW', 'address': '0x48f36c'}
+{'function': 'ExitThread', 'address': '0x48f370'}
+{'function': 'GetSystemTimeAsFileTime', 'address': '0x48f374'}
+{'function': 'ResumeThread', 'address': '0x48f378'}
+{'function': 'GetCommandLineW', 'address': '0x48f37c'}
+{'function': 'IsProcessorFeaturePresent', 'address': '0x48f380'}
+{'function': 'IsValidCodePage', 'address': '0x48f384'}
+{'function': 'GetACP', 'address': '0x48f388'}
+{'function': 'GetOEMCP', 'address': '0x48f38c'}
+{'function': 'GetCPInfo', 'address': '0x48f390'}
+{'function': 'SetLastError', 'address': '0x48f394'}
+{'function': 'UnhandledExceptionFilter', 'address': '0x48f398'}
+{'function': 'SetUnhandledExceptionFilter', 'address': '0x48f39c'}
+{'function': 'TlsAlloc', 'address': '0x48f3a0'}
+{'function': 'TlsGetValue', 'address': '0x48f3a4'}
+{'function': 'TlsSetValue', 'address': '0x48f3a8'}
+{'function': 'TlsFree', 'address': '0x48f3ac'}
+{'function': 'GetStartupInfoW', 'address': '0x48f3b0'}
+{'function': 'GetStringTypeW', 'address': '0x48f3b4'}
+{'function': 'SetStdHandle', 'address': '0x48f3b8'}
+{'function': 'GetFileType', 'address': '0x48f3bc'}
+{'function': 'GetConsoleCP', 'address': '0x48f3c0'}
+{'function': 'GetConsoleMode', 'address': '0x48f3c4'}
+{'function': 'RtlUnwind', 'address': '0x48f3c8'}
+{'function': 'ReadConsoleW', 'address': '0x48f3cc'}
+{'function': 'GetTimeZoneInformation', 'address': '0x48f3d0'}
+{'function': 'GetDateFormatW', 'address': '0x48f3d4'}
+{'function': 'GetTimeFormatW', 'address': '0x48f3d8'}
+{'function': 'LCMapStringW', 'address': '0x48f3dc'}
+{'function': 'GetEnvironmentStringsW', 'address': '0x48f3e0'}
+{'function': 'FreeEnvironmentStringsW', 'address': '0x48f3e4'}
+{'function': 'WriteConsoleW', 'address': '0x48f3e8'}
+{'function': 'FindClose', 'address': '0x48f3ec'}
+{'function': 'SetEnvironmentVariableA', 'address': '0x48f3f0'}
+ADVAPI32.dll
+{'function': 'GetAce', 'address': '0x48f000'}
+{'function': 'RegEnumValueW', 'address': '0x48f004'}
+{'function': 'RegDeleteValueW', 'address': '0x48f008'}
+{'function': 'RegDeleteKeyW', 'address': '0x48f00c'}
+{'function': 'RegEnumKeyExW', 'address': '0x48f010'}
+{'function': 'RegSetValueExW', 'address': '0x48f014'}
+{'function': 'RegOpenKeyExW', 'address': '0x48f018'}
+{'function': 'RegCloseKey', 'address': '0x48f01c'}
+{'function': 'RegQueryValueExW', 'address': '0x48f020'}
+{'function': 'RegConnectRegistryW', 'address': '0x48f024'}
+{'function': 'InitializeSecurityDescriptor', 'address': '0x48f028'}
+{'function': 'InitializeAcl', 'address': '0x48f02c'}
+{'function': 'AdjustTokenPrivileges', 'address': '0x48f030'}
+{'function': 'OpenThreadToken', 'address': '0x48f034'}
+{'function': 'OpenProcessToken', 'address': '0x48f038'}
+{'function': 'LookupPrivilegeValueW', 'address': '0x48f03c'}
+{'function': 'DuplicateTokenEx', 'address': '0x48f040'}
+{'function': 'CreateProcessAsUserW', 'address': '0x48f044'}
+{'function': 'CreateProcessWithLogonW', 'address': '0x48f048'}
+{'function': 'GetLengthSid', 'address': '0x48f04c'}
+{'function': 'CopySid', 'address': '0x48f050'}
+{'function': 'LogonUserW', 'address': '0x48f054'}
+{'function': 'AllocateAndInitializeSid', 'address': '0x48f058'}
+{'function': 'CheckTokenMembership', 'address': '0x48f05c'}
+{'function': 'RegCreateKeyExW', 'address': '0x48f060'}
+{'function': 'FreeSid', 'address': '0x48f064'}
+{'function': 'GetTokenInformation', 'address': '0x48f068'}
+{'function': 'GetSecurityDescriptorDacl', 'address': '0x48f06c'}
+{'function': 'GetAclInformation', 'address': '0x48f070'}
+{'function': 'AddAce', 'address': '0x48f074'}
+{'function': 'SetSecurityDescriptorDacl', 'address': '0x48f078'}
+{'function': 'GetUserNameW', 'address': '0x48f07c'}
+{'function': 'InitiateSystemShutdownExW', 'address': '0x48f080'}
+COMCTL32.dll
+{'function': 'ImageList_ReplaceIcon', 'address': '0x48f088'}
+{'function': 'ImageList_Destroy', 'address': '0x48f08c'}
+{'function': 'ImageList_Remove', 'address': '0x48f090'}
+{'function': 'ImageList_SetDragCursorImage', 'address': '0x48f094'}
+{'function': 'ImageList_BeginDrag', 'address': '0x48f098'}
+{'function': 'ImageList_DragEnter', 'address': '0x48f09c'}
+{'function': 'ImageList_DragLeave', 'address': '0x48f0a0'}
+{'function': 'ImageList_EndDrag', 'address': '0x48f0a4'}
+{'function': 'ImageList_DragMove', 'address': '0x48f0a8'}
+{'function': 'InitCommonControlsEx', 'address': '0x48f0ac'}
+{'function': 'ImageList_Create', 'address': '0x48f0b0'}
+COMDLG32.dll
+{'function': 'GetOpenFileNameW', 'address': '0x48f0b8'}
+{'function': 'GetSaveFileNameW', 'address': '0x48f0bc'}
+GDI32.dll
+{'function': 'StrokePath', 'address': '0x48f0c4'}
+{'function': 'DeleteObject', 'address': '0x48f0c8'}
+{'function': 'GetTextExtentPoint32W', 'address': '0x48f0cc'}
+{'function': 'ExtCreatePen', 'address': '0x48f0d0'}
+{'function': 'GetDeviceCaps', 'address': '0x48f0d4'}
+{'function': 'EndPath', 'address': '0x48f0d8'}
+{'function': 'SetPixel', 'address': '0x48f0dc'}
+{'function': 'CloseFigure', 'address': '0x48f0e0'}
+{'function': 'CreateCompatibleBitmap', 'address': '0x48f0e4'}
+{'function': 'CreateCompatibleDC', 'address': '0x48f0e8'}
+{'function': 'SelectObject', 'address': '0x48f0ec'}
+{'function': 'StretchBlt', 'address': '0x48f0f0'}
+{'function': 'GetDIBits', 'address': '0x48f0f4'}
+{'function': 'LineTo', 'address': '0x48f0f8'}
+{'function': 'AngleArc', 'address': '0x48f0fc'}
+{'function': 'MoveToEx', 'address': '0x48f100'}
+{'function': 'Ellipse', 'address': '0x48f104'}
+{'function': 'DeleteDC', 'address': '0x48f108'}
+{'function': 'GetPixel', 'address': '0x48f10c'}
+{'function': 'CreateDCW', 'address': '0x48f110'}
+{'function': 'GetStockObject', 'address': '0x48f114'}
+{'function': 'GetTextFaceW', 'address': '0x48f118'}
+{'function': 'CreateFontW', 'address': '0x48f11c'}
+{'function': 'SetTextColor', 'address': '0x48f120'}
+{'function': 'PolyDraw', 'address': '0x48f124'}
+{'function': 'BeginPath', 'address': '0x48f128'}
+{'function': 'Rectangle', 'address': '0x48f12c'}
+{'function': 'SetViewportOrgEx', 'address': '0x48f130'}
+{'function': 'GetObjectW', 'address': '0x48f134'}
+{'function': 'SetBkMode', 'address': '0x48f138'}
+{'function': 'RoundRect', 'address': '0x48f13c'}
+{'function': 'SetBkColor', 'address': '0x48f140'}
+{'function': 'CreatePen', 'address': '0x48f144'}
+{'function': 'CreateSolidBrush', 'address': '0x48f148'}
+{'function': 'StrokeAndFillPath', 'address': '0x48f14c'}
+IPHLPAPI.DLL
+{'function': 'IcmpCreateFile', 'address': '0x48f154'}
+{'function': 'IcmpCloseHandle', 'address': '0x48f158'}
+{'function': 'IcmpSendEcho', 'address': '0x48f15c'}
+MPR.dll
+{'function': 'WNetUseConnectionW', 'address': '0x48f3f8'}
+{'function': 'WNetCancelConnection2W', 'address': '0x48f3fc'}
+{'function': 'WNetGetConnectionW', 'address': '0x48f400'}
+{'function': 'WNetAddConnection2W', 'address': '0x48f404'}
+ole32.dll
+{'function': 'CoTaskMemAlloc', 'address': '0x48f828'}
+{'function': 'CoTaskMemFree', 'address': '0x48f82c'}
+{'function': 'CLSIDFromString', 'address': '0x48f830'}
+{'function': 'ProgIDFromCLSID', 'address': '0x48f834'}
+{'function': 'CLSIDFromProgID', 'address': '0x48f838'}
+{'function': 'OleSetMenuDescriptor', 'address': '0x48f83c'}
+{'function': 'MkParseDisplayName', 'address': '0x48f840'}
+{'function': 'OleSetContainedObject', 'address': '0x48f844'}
+{'function': 'CoCreateInstance', 'address': '0x48f848'}
+{'function': 'IIDFromString', 'address': '0x48f84c'}
+{'function': 'StringFromGUID2', 'address': '0x48f850'}
+{'function': 'CreateStreamOnHGlobal', 'address': '0x48f854'}
+{'function': 'OleInitialize', 'address': '0x48f858'}
+{'function': 'OleUninitialize', 'address': '0x48f85c'}
+{'function': 'CoInitialize', 'address': '0x48f860'}
+{'function': 'CoUninitialize', 'address': '0x48f864'}
+{'function': 'GetRunningObjectTable', 'address': '0x48f868'}
+{'function': 'CoGetInstanceFromFile', 'address': '0x48f86c'}
+{'function': 'CoGetObject', 'address': '0x48f870'}
+{'function': 'CoSetProxyBlanket', 'address': '0x48f874'}
+{'function': 'CoCreateInstanceEx', 'address': '0x48f878'}
+{'function': 'CoInitializeSecurity', 'address': '0x48f87c'}
+OLEAUT32.dll
+{'function': 'LoadTypeLibEx', 'address': '0x48f40c'}
+{'function': 'VariantCopyInd', 'address': '0x48f410'}
+{'function': 'SysReAllocString', 'address': '0x48f414'}
+{'function': 'SysFreeString', 'address': '0x48f418'}
+{'function': 'SafeArrayDestroyDescriptor', 'address': '0x48f41c'}
+{'function': 'SafeArrayDestroyData', 'address': '0x48f420'}
+{'function': 'SafeArrayUnaccessData', 'address': '0x48f424'}
+{'function': 'SafeArrayAccessData', 'address': '0x48f428'}
+{'function': 'SafeArrayAllocData', 'address': '0x48f42c'}
+{'function': 'SafeArrayAllocDescriptorEx', 'address': '0x48f430'}
+{'function': 'SafeArrayCreateVector', 'address': '0x48f434'}
+{'function': 'RegisterTypeLib', 'address': '0x48f438'}
+{'function': 'CreateStdDispatch', 'address': '0x48f43c'}
+{'function': 'DispCallFunc', 'address': '0x48f440'}
+{'function': 'VariantChangeType', 'address': '0x48f444'}
+{'function': 'SysStringLen', 'address': '0x48f448'}
+{'function': 'VariantTimeToSystemTime', 'address': '0x48f44c'}
+{'function': 'VarR8FromDec', 'address': '0x48f450'}
+{'function': 'SafeArrayGetVartype', 'address': '0x48f454'}
+{'function': 'VariantCopy', 'address': '0x48f458'}
+{'function': 'VariantClear', 'address': '0x48f45c'}
+{'function': 'OleLoadPicture', 'address': '0x48f460'}
+{'function': 'QueryPathOfRegTypeLib', 'address': '0x48f464'}
+{'function': 'RegisterTypeLibForUser', 'address': '0x48f468'}
+{'function': 'UnRegisterTypeLibForUser', 'address': '0x48f46c'}
+{'function': 'UnRegisterTypeLib', 'address': '0x48f470'}
+{'function': 'CreateDispTypeInfo', 'address': '0x48f474'}
+{'function': 'SysAllocString', 'address': '0x48f478'}
+{'function': 'VariantInit', 'address': '0x48f47c'}
+PSAPI.DLL
+{'function': 'GetProcessMemoryInfo', 'address': '0x48f484'}
+SHELL32.dll
+{'function': 'DragQueryPoint', 'address': '0x48f48c'}
+{'function': 'ShellExecuteExW', 'address': '0x48f490'}
+{'function': 'DragQueryFileW', 'address': '0x48f494'}
+{'function': 'SHEmptyRecycleBinW', 'address': '0x48f498'}
+{'function': 'SHGetPathFromIDListW', 'address': '0x48f49c'}
+{'function': 'SHBrowseForFolderW', 'address': '0x48f4a0'}
+{'function': 'SHCreateShellItem', 'address': '0x48f4a4'}
+{'function': 'SHGetDesktopFolder', 'address': '0x48f4a8'}
+{'function': 'SHGetSpecialFolderLocation', 'address': '0x48f4ac'}
+{'function': 'SHGetFolderPathW', 'address': '0x48f4b0'}
+{'function': 'SHFileOperationW', 'address': '0x48f4b4'}
+{'function': 'ExtractIconExW', 'address': '0x48f4b8'}
+{'function': 'Shell_NotifyIconW', 'address': '0x48f4bc'}
+{'function': 'ShellExecuteW', 'address': '0x48f4c0'}
+{'function': 'DragFinish', 'address': '0x48f4c4'}
+USER32.dll
+{'function': 'AdjustWindowRectEx', 'address': '0x48f4cc'}
+{'function': 'CopyImage', 'address': '0x48f4d0'}
+{'function': 'SetWindowPos', 'address': '0x48f4d4'}
+{'function': 'GetCursorInfo', 'address': '0x48f4d8'}
+{'function': 'RegisterHotKey', 'address': '0x48f4dc'}
+{'function': 'ClientToScreen', 'address': '0x48f4e0'}
+{'function': 'GetKeyboardLayoutNameW', 'address': '0x48f4e4'}
+{'function': 'IsCharAlphaW', 'address': '0x48f4e8'}
+{'function': 'IsCharAlphaNumericW', 'address': '0x48f4ec'}
+{'function': 'IsCharLowerW', 'address': '0x48f4f0'}
+{'function': 'IsCharUpperW', 'address': '0x48f4f4'}
+{'function': 'GetMenuStringW', 'address': '0x48f4f8'}
+{'function': 'GetSubMenu', 'address': '0x48f4fc'}
+{'function': 'GetCaretPos', 'address': '0x48f500'}
+{'function': 'IsZoomed', 'address': '0x48f504'}
+{'function': 'MonitorFromPoint', 'address': '0x48f508'}
+{'function': 'GetMonitorInfoW', 'address': '0x48f50c'}
+{'function': 'SetWindowLongW', 'address': '0x48f510'}
+{'function': 'SetLayeredWindowAttributes', 'address': '0x48f514'}
+{'function': 'FlashWindow', 'address': '0x48f518'}
+{'function': 'GetClassLongW', 'address': '0x48f51c'}
+{'function': 'TranslateAcceleratorW', 'address': '0x48f520'}
+{'function': 'IsDialogMessageW', 'address': '0x48f524'}
+{'function': 'GetSysColor', 'address': '0x48f528'}
+{'function': 'InflateRect', 'address': '0x48f52c'}
+{'function': 'DrawFocusRect', 'address': '0x48f530'}
+{'function': 'DrawTextW', 'address': '0x48f534'}
+{'function': 'FrameRect', 'address': '0x48f538'}
+{'function': 'DrawFrameControl', 'address': '0x48f53c'}
+{'function': 'FillRect', 'address': '0x48f540'}
+{'function': 'PtInRect', 'address': '0x48f544'}
+{'function': 'DestroyAcceleratorTable', 'address': '0x48f548'}
+{'function': 'CreateAcceleratorTableW', 'address': '0x48f54c'}
+{'function': 'SetCursor', 'address': '0x48f550'}
+{'function': 'GetWindowDC', 'address': '0x48f554'}
+{'function': 'GetSystemMetrics', 'address': '0x48f558'}
+{'function': 'GetActiveWindow', 'address': '0x48f55c'}
+{'function': 'CharNextW', 'address': '0x48f560'}
+{'function': 'wsprintfW', 'address': '0x48f564'}
+{'function': 'RedrawWindow', 'address': '0x48f568'}
+{'function': 'DrawMenuBar', 'address': '0x48f56c'}
+{'function': 'DestroyMenu', 'address': '0x48f570'}
+{'function': 'SetMenu', 'address': '0x48f574'}
+{'function': 'GetWindowTextLengthW', 'address': '0x48f578'}
+{'function': 'CreateMenu', 'address': '0x48f57c'}
+{'function': 'IsDlgButtonChecked', 'address': '0x48f580'}
+{'function': 'DefDlgProcW', 'address': '0x48f584'}
+{'function': 'CallWindowProcW', 'address': '0x48f588'}
+{'function': 'ReleaseCapture', 'address': '0x48f58c'}
+{'function': 'SetCapture', 'address': '0x48f590'}
+{'function': 'CreateIconFromResourceEx', 'address': '0x48f594'}
+{'function': 'mouse_event', 'address': '0x48f598'}
+{'function': 'ExitWindowsEx', 'address': '0x48f59c'}
+{'function': 'SetActiveWindow', 'address': '0x48f5a0'}
+{'function': 'FindWindowExW', 'address': '0x48f5a4'}
+{'function': 'EnumThreadWindows', 'address': '0x48f5a8'}
+{'function': 'SetMenuDefaultItem', 'address': '0x48f5ac'}
+{'function': 'InsertMenuItemW', 'address': '0x48f5b0'}
+{'function': 'IsMenu', 'address': '0x48f5b4'}
+{'function': 'TrackPopupMenuEx', 'address': '0x48f5b8'}
+{'function': 'GetCursorPos', 'address': '0x48f5bc'}
+{'function': 'DeleteMenu', 'address': '0x48f5c0'}
+{'function': 'SetRect', 'address': '0x48f5c4'}
+{'function': 'GetMenuItemID', 'address': '0x48f5c8'}
+{'function': 'GetMenuItemCount', 'address': '0x48f5cc'}
+{'function': 'SetMenuItemInfoW', 'address': '0x48f5d0'}
+{'function': 'GetMenuItemInfoW', 'address': '0x48f5d4'}
+{'function': 'SetForegroundWindow', 'address': '0x48f5d8'}
+{'function': 'IsIconic', 'address': '0x48f5dc'}
+{'function': 'FindWindowW', 'address': '0x48f5e0'}
+{'function': 'MonitorFromRect', 'address': '0x48f5e4'}
+{'function': 'keybd_event', 'address': '0x48f5e8'}
+{'function': 'SendInput', 'address': '0x48f5ec'}
+{'function': 'GetAsyncKeyState', 'address': '0x48f5f0'}
+{'function': 'SetKeyboardState', 'address': '0x48f5f4'}
+{'function': 'GetKeyboardState', 'address': '0x48f5f8'}
+{'function': 'GetKeyState', 'address': '0x48f5fc'}
+{'function': 'VkKeyScanW', 'address': '0x48f600'}
+{'function': 'LoadStringW', 'address': '0x48f604'}
+{'function': 'DialogBoxParamW', 'address': '0x48f608'}
+{'function': 'MessageBeep', 'address': '0x48f60c'}
+{'function': 'EndDialog', 'address': '0x48f610'}
+{'function': 'SendDlgItemMessageW', 'address': '0x48f614'}
+{'function': 'GetDlgItem', 'address': '0x48f618'}
+{'function': 'SetWindowTextW', 'address': '0x48f61c'}
+{'function': 'CopyRect', 'address': '0x48f620'}
+{'function': 'ReleaseDC', 'address': '0x48f624'}
+{'function': 'GetDC', 'address': '0x48f628'}
+{'function': 'EndPaint', 'address': '0x48f62c'}
+{'function': 'BeginPaint', 'address': '0x48f630'}
+{'function': 'GetClientRect', 'address': '0x48f634'}
+{'function': 'GetMenu', 'address': '0x48f638'}
+{'function': 'DestroyWindow', 'address': '0x48f63c'}
+{'function': 'EnumWindows', 'address': '0x48f640'}
+{'function': 'GetDesktopWindow', 'address': '0x48f644'}
+{'function': 'IsWindow', 'address': '0x48f648'}
+{'function': 'IsWindowEnabled', 'address': '0x48f64c'}
+{'function': 'IsWindowVisible', 'address': '0x48f650'}
+{'function': 'EnableWindow', 'address': '0x48f654'}
+{'function': 'InvalidateRect', 'address': '0x48f658'}
+{'function': 'GetWindowLongW', 'address': '0x48f65c'}
+{'function': 'GetWindowThreadProcessId', 'address': '0x48f660'}
+{'function': 'AttachThreadInput', 'address': '0x48f664'}
+{'function': 'GetFocus', 'address': '0x48f668'}
+{'function': 'GetWindowTextW', 'address': '0x48f66c'}
+{'function': 'ScreenToClient', 'address': '0x48f670'}
+{'function': 'SendMessageTimeoutW', 'address': '0x48f674'}
+{'function': 'EnumChildWindows', 'address': '0x48f678'}
+{'function': 'CharUpperBuffW', 'address': '0x48f67c'}
+{'function': 'GetParent', 'address': '0x48f680'}
+{'function': 'GetDlgCtrlID', 'address': '0x48f684'}
+{'function': 'SendMessageW', 'address': '0x48f688'}
+{'function': 'MapVirtualKeyW', 'address': '0x48f68c'}
+{'function': 'PostMessageW', 'address': '0x48f690'}
+{'function': 'GetWindowRect', 'address': '0x48f694'}
+{'function': 'SetUserObjectSecurity', 'address': '0x48f698'}
+{'function': 'CloseDesktop', 'address': '0x48f69c'}
+{'function': 'CloseWindowStation', 'address': '0x48f6a0'}
+{'function': 'OpenDesktopW', 'address': '0x48f6a4'}
+{'function': 'SetProcessWindowStation', 'address': '0x48f6a8'}
+{'function': 'GetProcessWindowStation', 'address': '0x48f6ac'}
+{'function': 'OpenWindowStationW', 'address': '0x48f6b0'}
+{'function': 'GetUserObjectSecurity', 'address': '0x48f6b4'}
+{'function': 'MessageBoxW', 'address': '0x48f6b8'}
+{'function': 'DefWindowProcW', 'address': '0x48f6bc'}
+{'function': 'SetClipboardData', 'address': '0x48f6c0'}
+{'function': 'EmptyClipboard', 'address': '0x48f6c4'}
+{'function': 'CountClipboardFormats', 'address': '0x48f6c8'}
+{'function': 'CloseClipboard', 'address': '0x48f6cc'}
+{'function': 'GetClipboardData', 'address': '0x48f6d0'}
+{'function': 'IsClipboardFormatAvailable', 'address': '0x48f6d4'}
+{'function': 'OpenClipboard', 'address': '0x48f6d8'}
+{'function': 'BlockInput', 'address': '0x48f6dc'}
+{'function': 'GetMessageW', 'address': '0x48f6e0'}
+{'function': 'LockWindowUpdate', 'address': '0x48f6e4'}
+{'function': 'DispatchMessageW', 'address': '0x48f6e8'}
+{'function': 'TranslateMessage', 'address': '0x48f6ec'}
+{'function': 'PeekMessageW', 'address': '0x48f6f0'}
+{'function': 'UnregisterHotKey', 'address': '0x48f6f4'}
+{'function': 'CheckMenuRadioItem', 'address': '0x48f6f8'}
+{'function': 'CharLowerBuffW', 'address': '0x48f6fc'}
+{'function': 'MoveWindow', 'address': '0x48f700'}
+{'function': 'SetFocus', 'address': '0x48f704'}
+{'function': 'PostQuitMessage', 'address': '0x48f708'}
+{'function': 'KillTimer', 'address': '0x48f70c'}
+{'function': 'CreatePopupMenu', 'address': '0x48f710'}
+{'function': 'RegisterWindowMessageW', 'address': '0x48f714'}
+{'function': 'SetTimer', 'address': '0x48f718'}
+{'function': 'ShowWindow', 'address': '0x48f71c'}
+{'function': 'CreateWindowExW', 'address': '0x48f720'}
+{'function': 'RegisterClassExW', 'address': '0x48f724'}
+{'function': 'LoadIconW', 'address': '0x48f728'}
+{'function': 'LoadCursorW', 'address': '0x48f72c'}
+{'function': 'GetSysColorBrush', 'address': '0x48f730'}
+{'function': 'GetForegroundWindow', 'address': '0x48f734'}
+{'function': 'MessageBoxA', 'address': '0x48f738'}
+{'function': 'DestroyIcon', 'address': '0x48f73c'}
+{'function': 'SystemParametersInfoW', 'address': '0x48f740'}
+{'function': 'LoadImageW', 'address': '0x48f744'}
+{'function': 'GetClassNameW', 'address': '0x48f748'}
+USERENV.dll
+{'function': 'DestroyEnvironmentBlock', 'address': '0x48f750'}
+{'function': 'UnloadUserProfile', 'address': '0x48f754'}
+{'function': 'CreateEnvironmentBlock', 'address': '0x48f758'}
+{'function': 'LoadUserProfileW', 'address': '0x48f75c'}
+UxTheme.dll
+{'function': 'IsThemeActive', 'address': '0x48f764'}
+VERSION.dll
+{'function': 'GetFileVersionInfoW', 'address': '0x48f76c'}
+{'function': 'GetFileVersionInfoSizeW', 'address': '0x48f770'}
+{'function': 'VerQueryValueW', 'address': '0x48f774'}
+WININET.dll
+{'function': 'InternetQueryDataAvailable', 'address': '0x48f77c'}
+{'function': 'InternetCloseHandle', 'address': '0x48f780'}
+{'function': 'InternetOpenW', 'address': '0x48f784'}
+{'function': 'InternetSetOptionW', 'address': '0x48f788'}
+{'function': 'InternetCrackUrlW', 'address': '0x48f78c'}
+{'function': 'HttpQueryInfoW', 'address': '0x48f790'}
+{'function': 'InternetQueryOptionW', 'address': '0x48f794'}
+{'function': 'HttpOpenRequestW', 'address': '0x48f798'}
+{'function': 'HttpSendRequestW', 'address': '0x48f79c'}
+{'function': 'FtpOpenFileW', 'address': '0x48f7a0'}
+{'function': 'FtpGetFileSize', 'address': '0x48f7a4'}
+{'function': 'InternetOpenUrlW', 'address': '0x48f7a8'}
+{'function': 'InternetReadFile', 'address': '0x48f7ac'}
+{'function': 'InternetConnectW', 'address': '0x48f7b0'}
+WINMM.dll
+{'function': 'timeGetTime', 'address': '0x48f7b8'}
+{'function': 'waveOutSetVolume', 'address': '0x48f7bc'}
+{'function': 'mciSendStringW', 'address': '0x48f7c0'}
+WSOCK32.dll
+{'function': 'WSACleanup', 'address': '0x48f7c8'}
+{'function': 'socket', 'address': '0x48f7cc'}
+{'function': 'inet_ntoa', 'address': '0x48f7d0'}
+{'function': 'setsockopt', 'address': '0x48f7d4'}
+{'function': 'ntohs', 'address': '0x48f7d8'}
+{'function': 'recvfrom', 'address': '0x48f7dc'}
+{'function': 'ioctlsocket', 'address': '0x48f7e0'}
+{'function': 'htons', 'address': '0x48f7e4'}
+{'function': 'WSAStartup', 'address': '0x48f7e8'}
+{'function': '__WSAFDIsSet', 'address': '0x48f7ec'}
+{'function': 'select', 'address': '0x48f7f0'}
+{'function': 'accept', 'address': '0x48f7f4'}
+{'function': 'listen', 'address': '0x48f7f8'}
+{'function': 'bind', 'address': '0x48f7fc'}
+{'function': 'closesocket', 'address': '0x48f800'}
+{'function': 'WSAGetLastError', 'address': '0x48f804'}
+{'function': 'recv', 'address': '0x48f808'}
+{'function': 'sendto', 'address': '0x48f80c'}
+{'function': 'send', 'address': '0x48f810'}
+{'function': 'inet_addr', 'address': '0x48f814'}
+{'function': 'gethostbyname', 'address': '0x48f818'}
+{'function': 'gethostname', 'address': '0x48f81c'}
+{'function': 'connect', 'address': '0x48f820'}
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ 
+

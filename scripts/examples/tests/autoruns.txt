@@ -1,0 +1,41 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 autoruns.py 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-24 18:04:25,065|INFO|bph.core.session| Starting session without setting up a sample file...
+2019-09-24 18:04:25,065|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-24 18:04:25,065|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-24 18:04:25,066|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-24 18:04:25,066|INFO|bph.core.server.template| Socket Ready
+2019-09-24 18:04:25,066|INFO|bph.core.server.template| Starting server listener..
+2019-09-24 18:04:25,066|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-24 18:04:25,083|INFO|bph.tools.windows.autoruns| Config file path: /home/bph/bph-framework/plugins/basic/dynamic/autoruns/x86/13.96/autoruns.json
+2019-09-24 18:04:25,084|INFO|bph.tools.windows.autoruns| BASIC - MALWARE ANALYSIS OPTIONS
+2019-09-24 18:04:25,084|INFO|bph.tools.windows.autoruns| Executing Template
+2019-09-24 18:04:25,771|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 54258)
+2019-09-24 18:04:27,087|INFO|bph.tools.windows.autoruns| Agent is Connected. Delivering Template now...
+2019-09-24 18:04:27,092|INFO|bph.tools.windows.autoruns| {'module_name': 'bph.tools.windows.autoruns', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '', 'project_name': 'blackhat_arsenal_2019', 'rid': 'd2471bd3-2cfd-47c0-a3f0-d7726b2d6046', 'tool_drive': 'H:\\', 'tool_name': 'autoruns', 'arch': 'x86', 'version': '13.96', 'tool_directory': '/home/bph/bph-framework/plugins/basic/dynamic/autoruns/x86', 'remote_tool_path': 'basic\\dynamic\\autoruns\\x86\\13.96', 'template': <Box: {'name': 'Autoruns', 'description': 'Autoruns plugin'}>, 'tool': <Box: {'filename': 'autorunsc.exe', 'version': '13.96', 'type': 'console'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': False, 'custom_user_vars': {}, 'delay': 5}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'action': 'analysis_basic', 'analysis_basic': {'description': 'Perform Basic Analysis Reporting', 'parameters': 'bdeiklmnoprstw -ct -h -t -o @report_folder@\\files\\autoruns.csv -nobanner', 'automation': None}}>}
+2019-09-24 18:04:27,093|INFO|bph.tools.windows.autoruns| Waiting to deliver template...
+2019-09-24 18:04:27,785|INFO|bph.core.server.template| Sending template...
+2019-09-24 18:04:27,786|INFO|bph.core.server.template| Waiting response from client...
+2019-09-24 18:04:32,100|INFO|bph.tools.windows.autoruns| Waiting to deliver template...
+2019-09-24 18:04:33,018|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-24 18:04:37,104|INFO|bph.tools.windows.autoruns| Template has been delivered.
+2019-09-24 18:04:37,104|INFO|bph.tools.windows.autoruns| Next instruction will be sent in (5) seconds
+2019-09-24 18:04:47,117|INFO|bph.tools.windows.autoruns| Searching for files now in: /home/bph/bph-framework/session/blackhat_arsenal_2019/5842f66b-1856-4292-ad86-bc72d0b78937/autoruns/d2471bd3-2cfd-47c0-a3f0-d7726b2d6046
+2019-09-24 18:04:47,118|INFO|bph.tools.windows.autoruns| File: autoruns.csv
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ 
+

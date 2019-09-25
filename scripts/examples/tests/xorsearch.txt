@@ -1,0 +1,52 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 xorsearch.py /media/agent/malware/PracticalMalwareAnalysis-Labs/all/Practical\ Malware\ Analysis\ Labs/BinaryCollection/Chapter_13L/Lab13-01.exe 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-25 10:05:34,710|INFO|bph.core.session| Setting sample: /media/agent/malware/PracticalMalwareAnalysis-Labs/all/Practical Malware Analysis Labs/BinaryCollection/Chapter_13L/Lab13-01.exe
+2019-09-25 10:05:34,712|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-25 10:05:34,712|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-25 10:05:34,713|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-25 10:05:34,713|INFO|bph.core.server.template| Socket Ready
+2019-09-25 10:05:34,713|INFO|bph.core.server.template| Starting server listener..
+2019-09-25 10:05:34,713|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-25 10:05:34,738|INFO|bph.tools.windows.xorsearch| Config file path: /home/bph/bph-framework/plugins/basic/static/xorsearch/x86/1.11.2/xorsearch.json
+2019-09-25 10:05:34,739|INFO|bph.tools.windows.xorsearch| SEARCHING STRING: HTTP
+2019-09-25 10:05:34,739|INFO|bph.tools.windows.xorsearch| Executing Template
+2019-09-25 10:05:35,013|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 55938)
+2019-09-25 10:05:36,741|INFO|bph.tools.windows.xorsearch| Agent is Connected. Delivering Template now...
+2019-09-25 10:05:36,746|INFO|bph.tools.windows.xorsearch| {'module_name': 'bph.tools.windows.xorsearch', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': 'a9a2734d080e3ae0f5ada35e878da7c8', 'project_name': 'blackhat_arsenal_2019', 'rid': 'eb36359b-2dc3-4326-946e-ea7ec2567bf1', 'tool_drive': 'H:\\', 'tool_name': 'xorsearch', 'arch': 'x86', 'version': '1.11.2', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/xorsearch/x86', 'remote_tool_path': 'basic\\static\\xorsearch\\x86\\1.11.2', 'template': <Box: {'name': 'XOR Search', 'description': 'XORSearch plugin'}>, 'tool': <Box: {'filename': 'xorsearch.exe', 'version': '1.11.2', 'type': 'console'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'search_www': {'description': "Search for XOR'd data", 'parameters': '-i @sample@ www. > @report_folder@\\xorsearch.log', 'automation': None}, 'action': 'search_www'}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/launcher/Lab13-01.exe'}
+2019-09-25 10:05:36,749|INFO|bph.tools.windows.xorsearch| Waiting to deliver template...
+2019-09-25 10:05:37,026|INFO|bph.core.server.template| Sending template...
+2019-09-25 10:05:37,028|INFO|bph.core.server.template| Waiting response from client...
+2019-09-25 10:05:38,300|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-25 10:05:41,754|INFO|bph.tools.windows.xorsearch| Template has been delivered.
+2019-09-25 10:05:41,755|INFO|bph.tools.windows.xorsearch| Next instruction will be sent in (0) seconds
+2019-09-25 10:05:41,756|INFO|bph.tools.windows.xorsearch| Content: Found XOR 3B position 7060: www.practicalmalwareanalysis.com;;;;;;;;;;;;;;;;;;
+2019-09-25 10:05:41,756|INFO|bph.tools.windows.xorsearch| Content: Found XOR 77 position 16E8: www....w.ceww.b7'7w...7w..gww.7.7w..yww..zww.E|ww.
+2019-09-25 10:05:41,757|INFO|bph.tools.windows.xorsearch| Content: Found XOR 77 position 2306: www..._.7w.S.7w.nwww....,.g..S..J..7w.b?'7w(.!..S.
+2019-09-25 10:05:41,757|INFO|bph.tools.windows.xorsearch| Content: Found XOR 77 position 2317: www....,.g..S..J..7w.b?'7w(.!..S.L.S{.z.q...u....s
+2019-09-25 10:05:41,757|INFO|bph.tools.windows.xorsearch| Content: Found XOR 77 position 2CF4: www..".....vww.".D....7wLg.|...6J..7w..!....tL...7
+2019-09-25 10:05:41,757|INFO|bph.tools.windows.xorsearch| Content: Found XOR 77 position 3261: www.....Ss.
+2019-09-25 10:05:41,758|INFO|bph.tools.windows.xorsearch| Content: Found XOR 77 position 32D5: www.).!.Twww....r...)..1z7.x..g.wcww...)l..D.).$!.
+2019-09-25 10:05:41,758|INFO|bph.tools.windows.xorsearch| Content: Found XOR 77 position 3364: www..$! D.D.D.NB..7w.:./.7w.s....O.?{....G..Sgv.x'
+2019-09-25 10:05:41,758|INFO|bph.tools.windows.xorsearch| Content: Found XOR 77 position 3724: www..S.7w.rk.7wvwww.q.jk.7wD..g.7w....zNj..7w.y..w
+2019-09-25 10:05:41,759|INFO|bph.tools.windows.xorsearch| Content: Found XOR 77 position 688D: www.www|www.wwwzwww.wwwWwww.wwwkwww.www~wwwqwwwaww
+2019-09-25 10:05:41,759|INFO|bph.tools.windows.xorsearch| Content: Found ADD 57 position 691D: WWW.WWWbWWWo^WWcWWWXWWW.WWWXWWWWWWWWWWWWWWWWWWWWWW
+2019-09-25 10:05:41,759|INFO|bph.tools.windows.xorsearch| Content: Found ADD 77 position 690D: www.www.wwwEwwwywwwNwww.www.~ww.wwwxwww.wwwxwwwwww
+2019-09-25 10:05:46,763|INFO|bph.tools.windows.xorsearch| Searching for files now in: /home/bph/bph-framework/session/blackhat_arsenal_2019/a9a2734d080e3ae0f5ada35e878da7c8/5842f66b-1856-4292-ad86-bc72d0b78937/xorsearch/eb36359b-2dc3-4326-946e-ea7ec2567bf1
+2019-09-25 10:05:46,763|INFO|bph.tools.windows.xorsearch| File: xorsearch.log
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ 
+

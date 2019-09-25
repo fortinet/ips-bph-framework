@@ -1,0 +1,28 @@
+{
+    "template": {
+        "name": "BinText",
+        "description": "BinText plugin"
+    },
+    "tool": {
+        "filename": "bintext.exe",
+        "version": "3.0.3",
+        "type": "gui"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "action": "",
+        "default": {
+            "description": "Starts BinText and pass sample as argument by automation",
+            "parameters": "@sample@",
+            "automation": "JHJlcG9ydF9mb2xkZXIgPSAiQHJlcG9ydF9mb2xkZXJAIg0KJHNhdmVfZGlhbG9nX3R4dCA9ICJTYXZlIHRleHQgdG8gZmlsZSINCkRpckNyZWF0ZSgkcmVwb3J0X2ZvbGRlcikNCiRsb2dmaWxlID0gJHJlcG9ydF9mb2xkZXIgJiAiXGJpbnRleHQubG9nIg0KRmlsZURlbGV0ZSgkbG9nZmlsZSkNCldpbkFjdGl2YXRlKCJbQ0xBU1M6QmluVGV4dCAzLjAuM10iKQ0KQ29udHJvbENsaWNrKCJbQ0xBU1M6QmluVGV4dCAzLjAuM10iLCAiJlNhdmUiLCAiW0NMQVNTOkJ1dHRvbjsgSU5TVEFOQ0U6NjFdIiwgImxlZnQiKQ0KV2luU2V0U3RhdGUoJHNhdmVfZGlhbG9nX3R4dCwgIiIsIDMpDQpDb250cm9sRm9jdXMoJHNhdmVfZGlhbG9nX3R4dCwgIiIsICJbQ0xBU1M6RWRpdDsgSU5TVEFOQ0U6MV0iKQ0KQ29udHJvbFNldFRleHQoJHNhdmVfZGlhbG9nX3R4dCwgIiIsICJbQ0xBU1M6RWRpdDsgSU5TVEFOQ0U6MV0iLCAkbG9nZmlsZSwgMSkNClNlbmRLZWVwQWN0aXZlKCRzYXZlX2RpYWxvZ190eHQsICImU2F2ZSIpDQpTZW5kKCJ7RU5URVJ9IikNCldpbkNsb3NlKCJbQ0xBU1M6QmluVGV4dCAzLjAuM10iKQ=="
+        }
+    }
+}

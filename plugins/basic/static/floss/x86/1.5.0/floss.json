@@ -1,0 +1,28 @@
+{
+    "template": {
+        "name": "Floss",
+        "description": "Floss  plugin"
+    },
+    "tool": {
+        "filename": "floss32.exe",
+        "version": "1.5.0",
+        "type": "console"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "action": "",
+        "search": {
+            "description": "Floss",
+            "parameters": "@sample@ > @report_folder@\\floss.log",
+            "automation": null
+        }
+    }
+}

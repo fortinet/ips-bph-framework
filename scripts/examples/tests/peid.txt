@@ -1,0 +1,42 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 peid.py ~/bph-framework/misc/bph_upx.exe 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-24 18:20:14,948|INFO|bph.core.session| Setting sample: /home/bph/bph-framework/misc/bph_upx.exe
+2019-09-24 18:20:14,949|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-24 18:20:14,949|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-24 18:20:14,950|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-24 18:20:14,950|INFO|bph.core.server.template| Socket Ready
+2019-09-24 18:20:14,950|INFO|bph.core.server.template| Starting server listener..
+2019-09-24 18:20:14,950|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-24 18:20:15,024|INFO|bph.tools.windows.peid| Config file path: /home/bph/bph-framework/plugins/basic/static/peid/x86/0.95/peid.json
+2019-09-24 18:20:15,024|INFO|bph.tools.windows.peid| EXECUTING DEEP SCAN
+2019-09-24 18:20:15,024|INFO|bph.tools.windows.peid| Executing Template
+2019-09-24 18:20:15,376|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 55175)
+2019-09-24 18:20:17,027|INFO|bph.tools.windows.peid| Agent is Connected. Delivering Template now...
+2019-09-24 18:20:17,032|INFO|bph.tools.windows.peid| {'module_name': 'bph.tools.windows.peid', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '53d4d29384354bf74c2fb2b4f8996d04', 'project_name': 'blackhat_arsenal_2019', 'rid': 'bcb96214-9fad-44d7-88d0-74bb8bf6f1d0', 'tool_drive': 'H:\\', 'tool_name': 'peid', 'arch': 'x86', 'version': '0.95', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/peid/x86', 'remote_tool_path': 'basic\\static\\peid\\x86\\0.95', 'template': <Box: {'name': 'PeID', 'description': 'PeiD plugin'}>, 'tool': <Box: {'filename': 'peid.exe', 'version': '0.95', 'type': 'gui'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'normal_scan': {'description': 'Peid Normal Scan', 'parameters': '', 'automation': ''}, 'deep_scan': {'description': 'Peid Deep Scan', 'parameters': '@sample@', 'automation': 'JHJlcG9ydF9mb2xkZXIgPSAiQHJlcG9ydF9mb2xkZXJAIg0KJGxvZ2ZpbGUgPSAkcmVwb3J0X2ZvbGRlciAmICJccGVpZC5sb2ciDQpGaWxlRGVsZXRlKCRsb2dmaWxlKQ0KDQpHbG9iYWwgJHBlaWQgPSBXaW5BY3RpdmF0ZSgiUEVpRCIpDQpQZWlkUnVuQXV0b21hdGlvbigpDQpHbG9iYWwgJHQgPSBDb250cm9sR2V0VGV4dCgkcGVpZCwgIiIsICJbQ0xBU1M6RWRpdDsgSU5TVEFOQ0U6Ml0iKQ0KUGVpZFdyaXRlTG9nKCkNClNlbmRLZWVwQWN0aXZlKCRwZWlkLCAiIikNClNlbmQoIiF7eH0iKQ0KV2luQ2xvc2UoJHBlaWQpDQoNCkZ1bmMgUGVpZFdyaXRlTG9nKCkNCiAgIERpclJlbW92ZSgkcmVwb3J0X2ZvbGRlciwgMSkNCiAgIERpckNyZWF0ZSgkcmVwb3J0X2ZvbGRlcikNCiAgICRmID0gRmlsZU9wZW4oJGxvZ2ZpbGUsIDIpDQogICBGaWxlV3JpdGUoJGYsICR0KQ0KRW5kRnVuYw0KDQpGdW5jIFBlaWRSdW5BdXRvbWF0aW9uKCkNCiAgIENvbnRyb2xDbGljaygkcGVpZCwgIi0+IiwgMTAyNiwgImxlZnQiKQ0KICAgU2VuZCgie0RPV059IikNCiAgIFNlbmQoIntET1dOfSIpDQogICBTZW5kKCJ7RE9XTn0iKQ0KICAgU2VuZCgie0VOVEVSfSIpDQpFbmRGdW5j'}, 'hardcore_scan': {'description': 'Peid Hardcore Scan', 'parameters': '', 'automation': ''}, 'kanal_scan': {'description': 'Peid Kanal Crypto Scan', 'parameters': '@sample@', 'automation': 'JHJlcG9ydF9mb2xkZXIgPSAiQHJlcG9ydF9mb2xkZXJAIg0KJGxvZ2ZpbGUgPSAkcmVwb3J0X2ZvbGRlciAmICJccGVpZC5sb2ciDQpGaWxlRGVsZXRlKCRsb2dmaWxlKQ0KDQpHbG9iYWwgJHBlaWQgPSBXaW5BY3RpdmF0ZSgiUEVpRCIpDQpDb250cm9sQ2xpY2soJHBlaWQsICItPiIsIDEwMjYsICJsZWZ0IikNClNlbmRLZWVwQWN0aXZlKCRwZWlkLCAiIikNClNlbmQoIntET1dOfSIpDQpTZW5kKCJ7UklHSFR9IikNClNlbmQoIntET1dOfSIpDQpTZW5kKCJ7RU5URVJ9IikNCldpbldhaXQoIktBTkFMIiwgIkRldGVjdGVkIikNCkNvbnRyb2xDbGljaygiS0FOQUwiLCAiIiwgIltDTEFTUzpCdXR0b247IElOU1RBTkNFOjJdIiwgImxlZnQiKQ0KU2VuZEtlZXBBY3RpdmUoIktBTkFMIiwgIiZFeHBvcnQuLiIpDQpTZW5kKCJ7RE9XTn0iKQ0KU2VuZCgie1JJR0hUfSIpDQpTZW5kKCJ7RU5URVJ9IikNCldpbldhaXQoIlNhdmUgUmVzdWx0cyB0byIsICIiKQ0KQ29udHJvbFNldFRleHQoIltDTEFTUzojMzI3NzBdIiwgIiIsICJbQ0xBU1M6RWRpdDsgSU5TVEFOQ0U6MV0iLCAkbG9nZmlsZSkNCkNvbnRyb2xDbGljaygiU2F2ZSBSZXN1bHRzIHRvIiwgIiZTYXZlIiwgIltDTEFTUzpCdXR0b247IElOU1RBTkNFOjJdIiwgImxlZnQiKQ0KV2luQ2xvc2UoIktBTkFMIiwgIiIpDQpXaW5DbG9zZSgkcGVpZCk='}, 'action': 'deep_scan'}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/launcher/bph_upx.exe'}
+2019-09-24 18:20:17,033|INFO|bph.tools.windows.peid| Waiting to deliver template...
+2019-09-24 18:20:17,384|INFO|bph.core.server.template| Sending template...
+2019-09-24 18:20:17,385|INFO|bph.core.server.template| Waiting response from client...
+2019-09-24 18:20:22,048|INFO|bph.tools.windows.peid| Waiting to deliver template...
+2019-09-24 18:20:23,642|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-24 18:20:27,059|INFO|bph.tools.windows.peid| Template has been delivered.
+2019-09-24 18:20:27,060|INFO|bph.tools.windows.peid| Next instruction will be sent in (0) seconds
+2019-09-24 18:20:27,060|INFO|bph.tools.windows.peid| Content: UPX 0.89.6 - 1.02 / 1.05 - 2.90 -> Markus & Laszlo
+2019-09-24 18:20:32,065|INFO|bph.tools.windows.peid| Searching for files now in: /home/bph/bph-framework/session/blackhat_arsenal_2019/53d4d29384354bf74c2fb2b4f8996d04/5842f66b-1856-4292-ad86-bc72d0b78937/peid/bcb96214-9fad-44d7-88d0-74bb8bf6f1d0
+2019-09-24 18:20:32,066|INFO|bph.tools.windows.peid| File: peid.log
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ 
+

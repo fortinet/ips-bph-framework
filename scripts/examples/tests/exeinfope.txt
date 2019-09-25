@@ -1,0 +1,39 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 exeinfope.py ~/bph-framework/misc/bph_upx.exe 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-24 18:12:09,025|INFO|bph.core.session| Setting sample: /home/bph/bph-framework/misc/bph_upx.exe
+2019-09-24 18:12:09,026|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-24 18:12:09,026|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-24 18:12:09,027|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-24 18:12:09,027|INFO|bph.core.server.template| Socket Ready
+2019-09-24 18:12:09,027|INFO|bph.core.server.template| Starting server listener..
+2019-09-24 18:12:09,027|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-24 18:12:09,095|INFO|bph.tools.windows.exeinfope| Config file path: /home/bph/bph-framework/plugins/basic/static/exeinfope/x86/0.0.3.5/exeinfope.json
+2019-09-24 18:12:09,096|INFO|bph.tools.windows.exeinfope| DEFAULT OPTION
+2019-09-24 18:12:09,096|INFO|bph.tools.windows.exeinfope| Executing Template
+2019-09-24 18:12:09,339|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 54696)
+2019-09-24 18:12:11,100|INFO|bph.tools.windows.exeinfope| Agent is Connected. Delivering Template now...
+2019-09-24 18:12:11,105|INFO|bph.tools.windows.exeinfope| {'module_name': 'bph.tools.windows.exeinfope', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '53d4d29384354bf74c2fb2b4f8996d04', 'project_name': 'blackhat_arsenal_2019', 'rid': '0c6f04b4-a1bb-431f-9684-d63bf835810b', 'tool_drive': 'H:\\', 'tool_name': 'exeinfope', 'arch': 'x86', 'version': '0.0.3.5', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/exeinfope/x86', 'remote_tool_path': 'basic\\static\\exeinfope\\x86\\0.0.3.5', 'template': <Box: {'name': 'ExeInfoPe', 'description': 'ExeInfoPe plugin'}>, 'tool': <Box: {'filename': 'exeinfope.exe', 'version': '0.0.3.5', 'type': 'gui'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'action': 'default', 'default': {'description': 'Starts BinText and pass sample as argument by automation', 'parameters': '@sample@', 'automation': 'JHJlcG9ydF9mb2xkZXIgPSAiQHJlcG9ydF9mb2xkZXJAIg0KJGxvZ2ZpbGUgPSAkcmVwb3J0X2ZvbGRlciAmICJcZXhlaW5mb3BlLmxvZyINCkZpbGVEZWxldGUoJGxvZ2ZpbGUpDQokZXhlaW5mb3BlID0gV2luQWN0aXZhdGUoIkV4ZWluZm8gUEUiKQ0KJG1zZyA9IENvbnRyb2xHZXRUZXh0KCRleGVpbmZvcGUsICIiLCAiW0NMQVNTOlRFZGl0OyBJTlNUQU5DRTo2XSIpDQokZiA9IEZpbGVPcGVuKCRsb2dmaWxlLCAyKQ0KRmlsZVdyaXRlKCRmLCAkbXNnKQ0KV2luQ2xvc2UoJGV4ZWluZm9wZSk='}}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/launcher/bph_upx.exe'}
+2019-09-24 18:12:11,106|INFO|bph.tools.windows.exeinfope| Waiting to deliver template...
+2019-09-24 18:12:11,347|INFO|bph.core.server.template| Sending template...
+2019-09-24 18:12:11,348|INFO|bph.core.server.template| Waiting response from client...
+2019-09-24 18:12:16,111|INFO|bph.tools.windows.exeinfope| Waiting to deliver template...
+2019-09-24 18:12:17,578|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-24 18:12:21,122|INFO|bph.tools.windows.exeinfope| Template has been delivered.
+2019-09-24 18:12:21,123|INFO|bph.tools.windows.exeinfope| Next instruction will be sent in (0) seconds
+2019-09-24 18:12:21,124|INFO|bph.tools.windows.exeinfope| Content: UPX 0.89 - 3.xx -> Markus & Laszlo ver. [ 3.91 ] <- from file. ( sign like UPX packer )
+bph@bph-controller:~/bph-framework/scripts/examples/tools$

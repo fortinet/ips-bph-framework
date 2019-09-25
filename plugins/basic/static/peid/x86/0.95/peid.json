@@ -1,0 +1,42 @@
+{
+    "template": {
+        "name": "PeID",
+        "description": "PeiD plugin"
+    },
+    "tool": {
+        "filename": "peid.exe",
+        "version": "0.95",
+        "type": "gui"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "normal_scan": {
+            "description": "Peid Normal Scan",
+            "parameters": "",
+            "automation": ""
+        },
+        "deep_scan": {
+            "description": "Peid Deep Scan",
+            "parameters": "@sample@",
+            "automation": "JHJlcG9ydF9mb2xkZXIgPSAiQHJlcG9ydF9mb2xkZXJAIg0KJGxvZ2ZpbGUgPSAkcmVwb3J0X2ZvbGRlciAmICJccGVpZC5sb2ciDQpGaWxlRGVsZXRlKCRsb2dmaWxlKQ0KDQpHbG9iYWwgJHBlaWQgPSBXaW5BY3RpdmF0ZSgiUEVpRCIpDQpQZWlkUnVuQXV0b21hdGlvbigpDQpHbG9iYWwgJHQgPSBDb250cm9sR2V0VGV4dCgkcGVpZCwgIiIsICJbQ0xBU1M6RWRpdDsgSU5TVEFOQ0U6Ml0iKQ0KUGVpZFdyaXRlTG9nKCkNClNlbmRLZWVwQWN0aXZlKCRwZWlkLCAiIikNClNlbmQoIiF7eH0iKQ0KV2luQ2xvc2UoJHBlaWQpDQoNCkZ1bmMgUGVpZFdyaXRlTG9nKCkNCiAgIERpclJlbW92ZSgkcmVwb3J0X2ZvbGRlciwgMSkNCiAgIERpckNyZWF0ZSgkcmVwb3J0X2ZvbGRlcikNCiAgICRmID0gRmlsZU9wZW4oJGxvZ2ZpbGUsIDIpDQogICBGaWxlV3JpdGUoJGYsICR0KQ0KRW5kRnVuYw0KDQpGdW5jIFBlaWRSdW5BdXRvbWF0aW9uKCkNCiAgIENvbnRyb2xDbGljaygkcGVpZCwgIi0+IiwgMTAyNiwgImxlZnQiKQ0KICAgU2VuZCgie0RPV059IikNCiAgIFNlbmQoIntET1dOfSIpDQogICBTZW5kKCJ7RE9XTn0iKQ0KICAgU2VuZCgie0VOVEVSfSIpDQpFbmRGdW5j"
+        },
+        "hardcore_scan": {
+            "description": "Peid Hardcore Scan",
+            "parameters": "",
+            "automation": ""
+        },
+        "kanal_scan": {
+            "description": "Peid Kanal Crypto Scan",
+            "parameters": "@sample@",
+            "automation": "JHJlcG9ydF9mb2xkZXIgPSAiQHJlcG9ydF9mb2xkZXJAIg0KJGxvZ2ZpbGUgPSAkcmVwb3J0X2ZvbGRlciAmICJccGVpZC5sb2ciDQpGaWxlRGVsZXRlKCRsb2dmaWxlKQ0KDQpHbG9iYWwgJHBlaWQgPSBXaW5BY3RpdmF0ZSgiUEVpRCIpDQpDb250cm9sQ2xpY2soJHBlaWQsICItPiIsIDEwMjYsICJsZWZ0IikNClNlbmRLZWVwQWN0aXZlKCRwZWlkLCAiIikNClNlbmQoIntET1dOfSIpDQpTZW5kKCJ7UklHSFR9IikNClNlbmQoIntET1dOfSIpDQpTZW5kKCJ7RU5URVJ9IikNCldpbldhaXQoIktBTkFMIiwgIkRldGVjdGVkIikNCkNvbnRyb2xDbGljaygiS0FOQUwiLCAiIiwgIltDTEFTUzpCdXR0b247IElOU1RBTkNFOjJdIiwgImxlZnQiKQ0KU2VuZEtlZXBBY3RpdmUoIktBTkFMIiwgIiZFeHBvcnQuLiIpDQpTZW5kKCJ7RE9XTn0iKQ0KU2VuZCgie1JJR0hUfSIpDQpTZW5kKCJ7RU5URVJ9IikNCldpbldhaXQoIlNhdmUgUmVzdWx0cyB0byIsICIiKQ0KQ29udHJvbFNldFRleHQoIltDTEFTUzojMzI3NzBdIiwgIiIsICJbQ0xBU1M6RWRpdDsgSU5TVEFOQ0U6MV0iLCAkbG9nZmlsZSkNCkNvbnRyb2xDbGljaygiU2F2ZSBSZXN1bHRzIHRvIiwgIiZTYXZlIiwgIltDTEFTUzpCdXR0b247IElOU1RBTkNFOjJdIiwgImxlZnQiKQ0KV2luQ2xvc2UoIktBTkFMIiwgIiIpDQpXaW5DbG9zZSgkcGVpZCk="
+        }
+    }
+}

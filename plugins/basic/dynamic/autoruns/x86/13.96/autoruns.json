@@ -1,0 +1,28 @@
+{
+    "template": {
+        "name": "Autoruns",
+        "description": "Autoruns plugin"
+    },
+    "tool": {
+        "filename": "autorunsc.exe",
+        "version": "13.96",
+        "type": "console"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "action": "",
+        "analysis_basic": {
+            "description": "Perform Basic Analysis Reporting",
+            "parameters": "bdeiklmnoprstw -ct -h -t -o @report_folder@\\files\\autoruns.csv -nobanner",
+            "automation": null
+        }
+    }
+}

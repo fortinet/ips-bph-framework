@@ -1,0 +1,27 @@
+{
+    "template": {
+        "name": "UPX",
+        "description": "UPX plugin"
+    },
+    "tool": {
+        "filename": "upx.exe",
+        "version": "3.91w",
+        "type": "console"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": true
+        }
+    },
+    "actions": {
+        "decompress": {
+            "description": "Decompress UPX'd file and generate its log for reporting",
+            "parameters": "-d @sample@ -o @report_folder@\\files\\unpacked.exe > @report_folder@\\upx.log",
+            "automation": null
+        }
+    }
+}

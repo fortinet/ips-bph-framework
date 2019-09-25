@@ -1,0 +1,248 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 bintext.py ~/bph-framework/misc/bph_upx.exe 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-24 18:06:09,165|INFO|bph.core.session| Setting sample: /home/bph/bph-framework/misc/bph_upx.exe
+2019-09-24 18:06:09,166|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-24 18:06:09,166|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-24 18:06:09,166|INFO|bph.core.session| COPYING SAMPLE
+2019-09-24 18:06:09,167|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-24 18:06:09,167|INFO|bph.core.server.template| Socket Ready
+2019-09-24 18:06:09,167|INFO|bph.core.server.template| Starting server listener..
+2019-09-24 18:06:09,167|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-24 18:06:09,236|INFO|bph.tools.windows.bintext| Config file path: /home/bph/bph-framework/plugins/basic/static/bintext/x86/3.0.3/bintext.json
+2019-09-24 18:06:09,237|INFO|bph.tools.windows.bintext| BINTEXT DEFAULT OPTIONS
+2019-09-24 18:06:09,237|INFO|bph.tools.windows.bintext| Executing Template
+2019-09-24 18:06:09,483|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 54361)
+2019-09-24 18:06:11,240|INFO|bph.tools.windows.bintext| Agent is Connected. Delivering Template now...
+2019-09-24 18:06:11,245|INFO|bph.tools.windows.bintext| {'module_name': 'bph.tools.windows.bintext', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '53d4d29384354bf74c2fb2b4f8996d04', 'project_name': 'blackhat_arsenal_2019', 'rid': 'e02d0907-6d5a-4708-827e-59b8fe0cf6c9', 'tool_drive': 'H:\\', 'tool_name': 'bintext', 'arch': 'x86', 'version': '3.0.3', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/bintext/x86', 'remote_tool_path': 'basic\\static\\bintext\\x86\\3.0.3', 'template': <Box: {'name': 'BinText', 'description': 'BinText plugin'}>, 'tool': <Box: {'filename': 'bintext.exe', 'version': '3.0.3', 'type': 'gui'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 3}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'action': 'default', 'default': {'description': 'Starts BinText and pass sample as argument by automation', 'parameters': '@sample@', 'automation': 'JHJlcG9ydF9mb2xkZXIgPSAiQHJlcG9ydF9mb2xkZXJAIg0KJHNhdmVfZGlhbG9nX3R4dCA9ICJTYXZlIHRleHQgdG8gZmlsZSINCkRpckNyZWF0ZSgkcmVwb3J0X2ZvbGRlcikNCiRsb2dmaWxlID0gJHJlcG9ydF9mb2xkZXIgJiAiXGJpbnRleHQubG9nIg0KRmlsZURlbGV0ZSgkbG9nZmlsZSkNCldpbkFjdGl2YXRlKCJbQ0xBU1M6QmluVGV4dCAzLjAuM10iKQ0KQ29udHJvbENsaWNrKCJbQ0xBU1M6QmluVGV4dCAzLjAuM10iLCAiJlNhdmUiLCAiW0NMQVNTOkJ1dHRvbjsgSU5TVEFOQ0U6NjFdIiwgImxlZnQiKQ0KV2luU2V0U3RhdGUoJHNhdmVfZGlhbG9nX3R4dCwgIiIsIDMpDQpDb250cm9sRm9jdXMoJHNhdmVfZGlhbG9nX3R4dCwgIiIsICJbQ0xBU1M6RWRpdDsgSU5TVEFOQ0U6MV0iKQ0KQ29udHJvbFNldFRleHQoJHNhdmVfZGlhbG9nX3R4dCwgIiIsICJbQ0xBU1M6RWRpdDsgSU5TVEFOQ0U6MV0iLCAkbG9nZmlsZSwgMSkNClNlbmRLZWVwQWN0aXZlKCRzYXZlX2RpYWxvZ190eHQsICImU2F2ZSIpDQpTZW5kKCJ7RU5URVJ9IikNCldpbkNsb3NlKCJbQ0xBU1M6QmluVGV4dCAzLjAuM10iKQ=='}}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/launcher/bph_upx.exe'}
+2019-09-24 18:06:11,246|INFO|bph.tools.windows.bintext| Waiting to deliver template...
+2019-09-24 18:06:11,489|INFO|bph.core.server.template| Sending template...
+2019-09-24 18:06:11,490|INFO|bph.core.server.template| Waiting response from client...
+2019-09-24 18:06:16,252|INFO|bph.tools.windows.bintext| Waiting to deliver template...
+2019-09-24 18:06:19,716|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-24 18:06:21,258|INFO|bph.tools.windows.bintext| Template has been delivered.
+2019-09-24 18:06:21,259|INFO|bph.tools.windows.bintext| Next instruction will be sent in (3) seconds
+2019-09-24 18:06:24,489|INFO|bph.tools.windows.bintext| Content: 
+2019-09-24 18:06:24,490|INFO|bph.tools.windows.bintext| Content: File pos       Mem pos          ID   Text
+2019-09-24 18:06:24,490|INFO|bph.tools.windows.bintext| Content: ========       =======          ==   ====
+2019-09-24 18:06:24,490|INFO|bph.tools.windows.bintext| Content: 
+2019-09-24 18:06:24,490|INFO|bph.tools.windows.bintext| Content: 00000000004D   00000040004D      0   !This program cannot be run in DOS mode.
+2019-09-24 18:06:24,490|INFO|bph.tools.windows.bintext| Content: 0000000000F8   0000004000F8      0   RichR
+2019-09-24 18:06:24,490|INFO|bph.tools.windows.bintext| Content: 000000000258   000000400258      0   .rsrc
+2019-09-24 18:06:24,490|INFO|bph.tools.windows.bintext| Content: 0000000004E0   0000004880E0      0   FLPTX\
+2019-09-24 18:06:24,490|INFO|bph.tools.windows.bintext| Content: 00000000064A   00000048824A      0   el}hu
+2019-09-24 18:06:24,490|INFO|bph.tools.windows.bintext| Content: 000000000A2D   00000048862D      0   wLJR\\+
+2019-09-24 18:06:24,490|INFO|bph.tools.windows.bintext| Content: 000000000B37   000000488737      0   4*Iu-]
+2019-09-24 18:06:24,490|INFO|bph.tools.windows.bintext| Content: 000000000B85   000000488785      0   bt<XS
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 000000000C9F   00000048889F      0   98u[Z
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 000000000D0E   00000048890E      0   Q~qgLSP7
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 000000000D53   000000488953      0   mV:b%
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 000000000DD3   0000004889D3      0   ws..QE
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 0000000011B4   000000488DB4      0   cX5_3
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 0000000011C6   000000488DC6      0   B;U	O<*}
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 000000001295   000000488E95      0   \;Gxs
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 0000000012F6   000000488EF6      0   c6j|Xfu
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 0000000016B9   0000004892B9      0   ih=PB
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 0000000017AE   0000004893AE      0   OAVVS?
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 000000001899   000000489499      0    |u~f=
+2019-09-24 18:06:24,491|INFO|bph.tools.windows.bintext| Content: 0000000018C8   0000004894C8      0   $gSW:
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 00000000190A   00000048950A      0   ? RxV3
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 000000001A94   000000489694      0   ;Yl+z
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 000000001B6A   00000048976A      0   92t&S
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 000000001D78   000000489978      0   <oZ{o
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 000000001D8E   00000048998E      0   f}:-?
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 000000001E1C   000000489A1C      0   D2!9YYiG
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 000000001E9C   000000489A9C      0   AjUM;
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 000000001F23   000000489B23      0   ,}(jcm
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 0000000020F4   000000489CF4      0   TFEkNj Y
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 000000002113   000000489D13      0   WMGIS
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 000000002270   000000489E70      0   hP$W1|7.F1L
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 00000000227F   000000489E7F      0   uhOH1
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 000000002454   00000048A054      0   Z$	(J
+2019-09-24 18:06:24,492|INFO|bph.tools.windows.bintext| Content: 00000000259B   00000048A19B      0   Ht SWpK
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 000000002610   00000048A210      0   ,?=Vp
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 0000000026F2   00000048A2F2      0   MqT+N
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 00000000280A   00000048A40A      0   :WS+H
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 00000000287B   00000048A47B      0   &As=X
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 000000002881   00000048A481      0   *hSSe
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 0000000028A8   00000048A4A8      0   :h%(B
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 00000000295C   00000048A55C      0   %!)8]
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 000000002989   00000048A589      0   8F4ti!
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 0000000029C5   00000048A5C5      0   Py}q!4;o
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 000000002BBC   00000048A7BC      0   7PmTr
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 000000002C21   00000048A821      0   Wh'\:H
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 000000002C2A   00000048A82A      0   AK4+Er
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 000000002C43   00000048A843      0   h83=B
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 000000002E89   00000048AA89      0   LJ!?-
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 000000003060   00000048AC60      0   w3eGL
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 0000000030C7   00000048ACC7      0   IS]PVG
+2019-09-24 18:06:24,493|INFO|bph.tools.windows.bintext| Content: 0000000031B1   00000048ADB1      0   K(Z0$
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 00000000322C   00000048AE2C      0   @N}%6
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 0000000032FE   00000048AEFE      0   L4dVGHPQ
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 0000000033B9   00000048AFB9      0   wOV!{P
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 0000000033FD   00000048AFFD      0   ?S te
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 00000000352E   00000048B12E      0   1j?Yj0
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 00000000366E   00000048B26E      0   b9Zj.0@
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 0000000037C9   00000048B3C9      0   uNj {wxM?
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 00000000384D   00000048B44D      0   6UYOa T
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 00000000388C   00000048B48C      0   q[#uU
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: File pos       Mem pos          ID   Text
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: ========       =======          ==   ====
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 00000000394F   00000048B54F      0   3<ap18
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 00000000395E   00000048B55E      0   x{>@:
+2019-09-24 18:06:24,494|INFO|bph.tools.windows.bintext| Content: 000000003A05   00000048B605      0   jN	jG=H
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003A32   00000048B632      0   wojV&
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003A63   00000048B663      0   MtfjB
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003A7A   00000048B67A      0   HtRjCG
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003ADC   00000048B6DC      0   '>Vs(~t
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003BA5   00000048B7A5      0   3'Oz3
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003BE0   00000048B7E0      0   >#t%j
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003C04   00000048B804      0   $+1r
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003C62   00000048B862      0   btNXN,
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003C71   00000048B871      0   u/u4H_
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003D0F   00000048B90F      0   |$pAU3Gh
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003D1B   00000048B91B      0   {L$-n
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003DE8   00000048B9E8      0   VPwco
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003F02   00000048BB02      0   }QP1S
+2019-09-24 18:06:24,495|INFO|bph.tools.windows.bintext| Content: 000000003F4A   00000048BB4A      0   ?#tRf9
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 000000003F5E   00000048BB5E      0   't4;8
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 00000000411B   00000048BD1B      0   gM-!0
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 0000000041F5   00000048BDF5      0   pP9_X,&
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 0000000041FF   00000048BDFF      0   6< P_[
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 00000000422E   00000048BE2E      0   uI)Pt
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 00000000423B   00000048BE3B      0   yvbs]
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 0000000042CD   00000048BECD      0   k['Wy#h
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 0000000043C2   00000048BFC2      0   5bZ|k
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 000000004408   00000048C008      0   t!C&_Hu
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 000000004433   00000048C033      0   h	g5!
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 000000004447   00000048C047      0   h+6S?
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 0000000045A4   00000048C1A4      0   a;jxp
+2019-09-24 18:06:24,496|INFO|bph.tools.windows.bintext| Content: 00000000476D   00000048C36D      0   =.;Vv
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 00000000482A   00000048C42A      0   vL]!:
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 00000000496A   00000048C56A      0   u4I@)R\|
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 000000004A29   00000048C629      0   QMxmR
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 000000004AC2   00000048C6C2      0   s?RFbx
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 000000004AF2   00000048C6F2      0   *zgAe
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 000000004B01   00000048C701      0   t'Hlw
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 000000004B07   00000048C707      0   S~gk9
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 000000004B1D   00000048C71D      0   ;-VU;a
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 000000004B4C   00000048C74C      0   N+HuA9
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 000000004C03   00000048C803      0   YxY9rcP
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 000000004C0E   00000048C80E      0   5Rd,z
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 000000004C77   00000048C877      0   8=@@!
+2019-09-24 18:06:24,497|INFO|bph.tools.windows.bintext| Content: 000000004CB6   00000048C8B6      0   X{dR'p
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 000000004D7C   00000048C97C      0   >408'
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 000000004DC3   00000048C9C3      0   :}vt_
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 000000004E68   00000048CA68      0   fXa(L
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 000000004FFF   00000048CBFF      0   9pD.j
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 000000005088   00000048CC88      0   :f$Z5
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 00000000525D   00000048CE5D      0   4u:Ob
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 0000000052A2   00000048CEA2      0   _UF+H
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 0000000052D7   00000048CED7      0   y{ TG
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 000000005383   00000048CF83      0   J5V1F
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 00000000541C   00000048D01C      0   tCWjg
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 00000000548A   00000048D08A      0   0t<b|Q
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 0000000054FF   00000048D0FF      0   X;lA8
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 000000005514   00000048D114      0   MVu'N9
+2019-09-24 18:06:24,498|INFO|bph.tools.windows.bintext| Content: 000000005558   00000048D158      0   %m:E[
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 0000000056CA   00000048D2CA      0   KKCPL
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 00000000590E   00000048D50E      0   Ue9t7
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 0000000059BC   00000048D5BC      0   |Vdt_V_]
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: File pos       Mem pos          ID   Text
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: ========       =======          ==   ====
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 000000005A97   00000048D697      0   #J:/6
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 000000005AAA   00000048D6AA      0   &iT$T
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 000000005B75   00000048D775      0   0ROT[
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 000000005BD7   00000048D7D7      0   r6hOd
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 000000005C42   00000048D842      0   vT%P(e
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 000000005DA4   00000048D9A4      0   D8.m,/
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 000000005E2F   00000048DA2F      0   >V}jui
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 000000005F8D   00000048DB8D      0   )>}T{
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 000000006221   00000048DE21      0   (rCS|
+2019-09-24 18:06:24,499|INFO|bph.tools.windows.bintext| Content: 000000006883   00000048E483      0   |B+mf0
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000006A1E   00000048E61E      0   if!qDt
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000006CF0   00000048E8F0      0   c:{uyy
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000006ED4   00000048EAD4      0   #FFFF
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000006F02   00000048EB02      0   3Ax?Y
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000007013   00000048EC13      0   C@Nty!
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000007159   00000048ED59      0   90tCQ
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 00000000729C   00000048EE9C      0   }#xu;
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 0000000072B2   00000048EEB2      0   u ;P)
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000007473   00000048F073      0   ~jOap8iJ
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 0000000076AE   00000048F2AE      0   f0f;f>u
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 0000000076E4   00000048F2E4      0   ~*Oz}Dw
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000007786   00000048F386      0   wtzP#
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 00000000784B   00000048F44B      0   "?@!N
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000007877   00000048F477      0   d  q,R#
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000007917   00000048F517      0   qMe{q
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 0000000079AA   00000048F5AA      0   ?=6V7
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000007B06   00000048F706      0   Hj8Gs44
+2019-09-24 18:06:24,500|INFO|bph.tools.windows.bintext| Content: 000000007C8F   00000048F88F      0   [M{	;
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 000000007D5D   00000048F95D      0   i*POa
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 000000008189   00000048FD89      0   Rt'St!g
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 00000000845E   00000049005E      0   0fvi~
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 00000000847A   00000049007A      0   iRC"Uu
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 000000008586   000000490186      0   ykSQO
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 000000008592   000000490192      0   6:}5,
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 0000000085BE   0000004901BE      0   kx206D2a6
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 00000000895E   00000049055E      0   M (v-
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 000000008970   000000490570      0   :(($uX
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 000000008A82   000000490682      0   J48<@D
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 000000008B1F   00000049071F      0   lptC(
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 000000008B92   000000490792      0   ('W|d
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 000000008C80   000000490880      0   W}y@4Is
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 000000008D3B   00000049093B      0   $8PNBB#
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 000000008E19   000000490A19      0   XcF04!
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 00000000900D   000000490C0D      0   !4N%BBe
+2019-09-24 18:06:24,501|INFO|bph.tools.windows.bintext| Content: 00000000910A   000000490D0A      0   .&B7E-p
+2019-09-24 18:06:24,502|INFO|bph.tools.windows.bintext| Content: 000000009347   000000490F47      0   \hWH,
+2019-09-24 18:06:24,502|INFO|bph.tools.windows.bintext| Content: 0000000093F9   000000490FF9      0   0-1OBW2
+2019-09-24 18:06:24,502|INFO|bph.tools.windows.bintext| Content: 0000000094A3   0000004910A3      0   }Dt]+d
+[...]
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: File pos       Mem pos          ID   Text
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: ========       =======          ==   ====
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 00000005E1D4   0000004E69D4      0   ExitProcess
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 00000005E1E2   0000004E69E2      0   GetAce
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 00000005E1EA   0000004E69EA      0   ImageList_Remove
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 00000005E1FC   0000004E69FC      0   GetOpenFileNameW
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 00000005E20E   0000004E6A0E      0   LineTo
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 00000005E216   0000004E6A16      0   IcmpSendEcho
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 00000005E224   0000004E6A24      0   WNetUseConnectionW
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 00000005E238   0000004E6A38      0   CoGetObject
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 00000005E246   0000004E6A46      0   GetProcessMemoryInfo
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 00000005E25C   0000004E6A5C      0   DragFinish
+2019-09-24 18:06:24,859|INFO|bph.tools.windows.bintext| Content: 00000005E268   0000004E6A68      0   GetDC
+2019-09-24 18:06:24,860|INFO|bph.tools.windows.bintext| Content: 00000005E270   0000004E6A70      0   LoadUserProfileW
+2019-09-24 18:06:24,860|INFO|bph.tools.windows.bintext| Content: 00000005E282   0000004E6A82      0   IsThemeActive
+2019-09-24 18:06:24,860|INFO|bph.tools.windows.bintext| Content: 00000005E292   0000004E6A92      0   VerQueryValueW
+2019-09-24 18:06:24,860|INFO|bph.tools.windows.bintext| Content: 00000005E2A2   0000004E6AA2      0   FtpOpenFileW
+2019-09-24 18:06:24,860|INFO|bph.tools.windows.bintext| Content: 00000005E2B0   0000004E6AB0      0   timeGetTime
+2019-09-24 18:06:24,860|INFO|bph.tools.windows.bintext| Content: 000000057D9A   0000004E059A      0   SCRIPT
+2019-09-24 18:06:24,860|INFO|bph.tools.windows.bintext| Content: 00000005D9CE   0000004E61CE      0   VS_VERSION_INFO
+2019-09-24 18:06:24,860|INFO|bph.tools.windows.bintext| Content: 00000005DA2A   0000004E622A      0   StringFileInfo
+2019-09-24 18:06:24,860|INFO|bph.tools.windows.bintext| Content: 00000005DA4E   0000004E624E      0   080904B0
+2019-09-24 18:06:24,860|INFO|bph.tools.windows.bintext| Content: 00000005DA66   0000004E6266      0   VarFileInfo
+2019-09-24 18:06:24,860|INFO|bph.tools.windows.bintext| Content: 00000005DA86   0000004E6286      0   Translation
+2019-09-24 18:06:29,861|INFO|bph.tools.windows.bintext| Searching for files now in: /home/bph/bph-framework/session/blackhat_arsenal_2019/53d4d29384354bf74c2fb2b4f8996d04/5842f66b-1856-4292-ad86-bc72d0b78937/bintext/e02d0907-6d5a-4708-827e-59b8fe0cf6c9
+2019-09-24 18:06:29,862|INFO|bph.tools.windows.bintext| File: bintext.log
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ 
+

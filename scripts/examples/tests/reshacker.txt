@@ -1,0 +1,40 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 reshacker.py ~/bph-framework/misc/bph_upx.exe 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-24 18:18:45,070|INFO|bph.core.session| Setting sample: /home/bph/bph-framework/misc/bph_upx.exe
+2019-09-24 18:18:45,071|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-24 18:18:45,071|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-24 18:18:45,071|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-24 18:18:45,072|INFO|bph.core.server.template| Socket Ready
+2019-09-24 18:18:45,072|INFO|bph.core.server.template| Starting server listener..
+2019-09-24 18:18:45,072|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-24 18:18:45,140|INFO|bph.tools.windows.resourcehacker| Config file path: /home/bph/bph-framework/plugins/basic/static/resourcehacker/x86/5.1.7/resourcehacker.json
+2019-09-24 18:18:45,141|INFO|bph.tools.windows.resourcehacker| EXTRACTING RESOURCES
+2019-09-24 18:18:45,141|INFO|bph.tools.windows.resourcehacker| Executing Template
+2019-09-24 18:18:45,552|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 55104)
+2019-09-24 18:18:47,143|INFO|bph.tools.windows.resourcehacker| Agent is Connected. Delivering Template now...
+2019-09-24 18:18:47,147|INFO|bph.tools.windows.resourcehacker| {'module_name': 'bph.tools.windows.resourcehacker', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '53d4d29384354bf74c2fb2b4f8996d04', 'project_name': 'blackhat_arsenal_2019', 'rid': 'ca208557-c999-4b09-bfc0-c2d747f82182', 'tool_drive': 'H:\\', 'tool_name': 'resourcehacker', 'arch': 'x86', 'version': '5.1.7', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/resourcehacker/x86', 'remote_tool_path': 'basic\\static\\resourcehacker\\x86\\5.1.7', 'template': <Box: {'name': 'ResourceHacker', 'description': 'ResourceHacker plugin'}>, 'tool': <Box: {'filename': 'resourcehacker.exe', 'version': '5.1.7', 'type': 'console'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 0}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'extract_resources': {'description': 'Extract resources from given file', 'parameters': '-open @sample@ -save @report_folder@\\files\\ -action extract -mask ICONGROUP,, -log @report_folder@\\reshacker.log', 'automation': None}, 'action': 'extract_resources'}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/launcher/bph_upx.exe'}
+2019-09-24 18:18:47,148|INFO|bph.tools.windows.resourcehacker| Waiting to deliver template...
+2019-09-24 18:18:47,563|INFO|bph.core.server.template| Sending template...
+2019-09-24 18:18:47,563|INFO|bph.core.server.template| Waiting response from client...
+2019-09-24 18:18:48,802|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-24 18:18:52,154|INFO|bph.tools.windows.resourcehacker| Template has been delivered.
+2019-09-24 18:18:52,154|INFO|bph.tools.windows.resourcehacker| Next instruction will be sent in (0) seconds
+2019-09-24 18:18:57,161|INFO|bph.tools.windows.resourcehacker| Searching for files now in: /home/bph/bph-framework/session/blackhat_arsenal_2019/53d4d29384354bf74c2fb2b4f8996d04/5842f66b-1856-4292-ad86-bc72d0b78937/resourcehacker/ca208557-c999-4b09-bfc0-c2d747f82182
+2019-09-24 18:18:57,162|INFO|bph.tools.windows.resourcehacker| File: 99.ico
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ 
+

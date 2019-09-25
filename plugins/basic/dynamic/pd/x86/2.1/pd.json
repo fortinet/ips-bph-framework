@@ -1,0 +1,28 @@
+{
+    "template": {
+        "name": "Pd",
+        "description": "Pd Plugin"
+    },
+    "tool": {
+        "filename": "pd32.exe",
+        "version": "2.1",
+        "type": "console"
+    },
+    "configuration": {
+        "execution": {
+            "admin_required": false,
+            "background_run": false
+        },
+        "reporting": {
+            "report_files": false
+        }
+    },
+    "actions": {
+        "action": "",
+        "dump_process": {
+            "description": "Dumps the target process",
+            "parameters": "-p @process_name@ -o @report_folder@\\files\\",
+            "automation": null
+        }
+    }
+}

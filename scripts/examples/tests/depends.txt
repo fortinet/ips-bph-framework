@@ -1,0 +1,40 @@
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ python3 depends.py ~/bph-framework/misc/bph_upx.exe 
+
+            ____  __    ___   ________ __ ____  __  _________   _______  __
+           / __ )/ /   /   | / ____/ //_// __ \/ / / / ____/ | / /  _/ |/ /
+          / __  / /   / /| |/ /   / ,<  / /_/ / /_/ / __/ /  |/ // / |   / 
+         / /_/ / /___/ ___ / /___/ /| |/ ____/ __  / /___/ /|  // / /   |  
+        /_____/_____/_/  |_\____/_/ |_/_/   /_/ /_/_____/_/ |_/___//_/|_|
+                                                             -=[v.1.0.0]=-
+                                                              
+                    MALWARE ANALYSIS + AUTOMATION FRAMEWORK
+                   
+                Developed by Chris Navarrete @ FortiGuard Labs
+              
+                       Copyright (c) 2019 Fortinet, Inc.
+                       
+                     Contact: bph_framework@fortinet.com               
+        
+2019-09-24 18:09:42,111|INFO|bph.core.session| Setting sample: /home/bph/bph-framework/misc/bph_upx.exe
+2019-09-24 18:09:42,112|INFO|bph.core.session| Session ID: 5842f66b-1856-4292-ad86-bc72d0b78937
+2019-09-24 18:09:42,112|INFO|bph.core.session| Starting session: blackhat_arsenal_2019
+2019-09-24 18:09:42,113|INFO|bph.core.server.template| Initializing BLACKPHENIX C&C Template Server...
+2019-09-24 18:09:42,113|INFO|bph.core.server.template| Socket Ready
+2019-09-24 18:09:42,113|INFO|bph.core.server.template| Starting server listener..
+2019-09-24 18:09:42,113|INFO|bph.core.server.template| Accepting new connections now....
+2019-09-24 18:09:42,184|INFO|bph.tools.windows.depends| Config file path: /home/bph/bph-framework/plugins/basic/static/depends/x86/2.2.6000/depends.json
+2019-09-24 18:09:42,185|INFO|bph.tools.windows.depends| DEFAULT OPTIONS
+2019-09-24 18:09:42,185|INFO|bph.tools.windows.depends| Executing Template
+2019-09-24 18:09:42,369|INFO|bph.core.server.template| Agent connected: ('192.168.56.1', 54558)
+2019-09-24 18:09:44,189|INFO|bph.tools.windows.depends| Agent is Connected. Delivering Template now...
+2019-09-24 18:09:44,193|INFO|bph.tools.windows.depends| {'module_name': 'bph.tools.windows.depends', 'sid': '5842f66b-1856-4292-ad86-bc72d0b78937', 'md5': '53d4d29384354bf74c2fb2b4f8996d04', 'project_name': 'blackhat_arsenal_2019', 'rid': '562bfe35-d4cc-40a3-abd8-bc073039fdd2', 'tool_drive': 'H:\\', 'tool_name': 'depends', 'arch': 'x86', 'version': '2.2.6000', 'tool_directory': '/home/bph/bph-framework/plugins/basic/static/depends/x86', 'remote_tool_path': 'basic\\static\\depends\\x86\\2.2.6000', 'template': <Box: {'name': 'Depends', 'description': 'Depends plugin'}>, 'tool': <Box: {'filename': 'depends.exe', 'version': '2.2.6000', 'type': 'console'}>, 'configuration': <Box: {'execution': {'admin_required': False, 'background_run': False, 'download_sample': True, 'custom_user_vars': {}, 'delay': 5}, 'reporting': {'report_files': True}}>, 'actions': <Box: {'action': 'default', 'default': {'description': 'Basic', 'parameters': '/c /oc @report_folder@\\files\\depends.csv @sample@', 'automation': None}}>, 'download_url': 'http://192.168.56.90:8194/bph/session/blackhat_arsenal_2019/launcher/bph_upx.exe'}
+2019-09-24 18:09:44,194|INFO|bph.tools.windows.depends| Waiting to deliver template...
+2019-09-24 18:09:44,375|INFO|bph.core.server.template| Sending template...
+2019-09-24 18:09:44,376|INFO|bph.core.server.template| Waiting response from client...
+2019-09-24 18:09:49,199|INFO|bph.tools.windows.depends| Waiting to deliver template...
+2019-09-24 18:09:49,612|INFO|bph.core.server.template| Template was delivered correctly
+2019-09-24 18:09:54,208|INFO|bph.tools.windows.depends| Template has been delivered.
+2019-09-24 18:09:54,208|INFO|bph.tools.windows.depends| Next instruction will be sent in (5) seconds
+2019-09-24 18:10:04,226|INFO|bph.tools.windows.depends| Searching for files now in: /home/bph/bph-framework/session/blackhat_arsenal_2019/53d4d29384354bf74c2fb2b4f8996d04/5842f66b-1856-4292-ad86-bc72d0b78937/depends/562bfe35-d4cc-40a3-abd8-bc073039fdd2
+2019-09-24 18:10:04,226|INFO|bph.tools.windows.depends| File: depends.csv
+bph@bph-controller:~/bph-framework/scripts/examples/tools$ 
